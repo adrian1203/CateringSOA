@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="CateringApi:ejb exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/CateringApi_ejb_exploded.rar</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="CateringApi/ejb/EJB" />
+      <element id="module-output" name="CateringApi" />
+    </root>
+  </artifact>
+</component>

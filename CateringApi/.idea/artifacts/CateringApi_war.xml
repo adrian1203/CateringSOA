@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CateringApi:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CateringApi</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CateringApi-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CateringApi:war exploded" />
+    </root>
+  </artifact>
+</component>
