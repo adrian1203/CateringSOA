@@ -1,0 +1,3 @@
+# CateringSOA
+
+## PERSISTENCE.XML
