@@ -2,5 +2,5 @@
 
 public interface ExampleInterface {
 
-    public void Hello();
+    public String Hello();
 }

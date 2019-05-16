@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="InterfaceApiWar">
+    <output-path>$PROJECT_DIR$/out/artifacts/InterfaceApiWar</output-path>
+    <root id="archive" name="InterfaceApiWar.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="InterfacesApi" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="artifact" artifact-name="InterfacesApi" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

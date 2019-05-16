@@ -22,4 +22,5 @@ public class CateringUser implements Serializable {
 
     public CateringUser() {
     }
+
 }
