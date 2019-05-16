@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="InterfacesApi">
+    <output-path>$PROJECT_DIR$/out/artifacts/InterfacesApi</output-path>
+    <root id="archive" name="InterfacesApi.jar">
+      <element id="module-output" name="InterfacesApi" />
+    </root>
+  </artifact>
+</component>
