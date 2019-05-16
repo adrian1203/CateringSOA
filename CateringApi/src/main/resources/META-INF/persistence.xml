@@ -3,6 +3,7 @@
 
     <persistence-unit name="CateringJPA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>domain.CateringUser</class>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost/CateringDB"/>
