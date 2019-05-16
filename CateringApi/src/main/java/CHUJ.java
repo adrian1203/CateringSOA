@@ -1,3 +1,5 @@
+import test.ExampleInterface;
+
 import javax.ejb.Remote;
 import javax.ejb.Stateful;
 

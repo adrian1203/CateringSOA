@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="InterfacesApi">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
