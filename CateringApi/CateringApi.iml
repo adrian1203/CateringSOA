@@ -88,6 +88,6 @@
     <orderEntry type="library" name="Maven: org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec:1.0.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.resteasy:resteasy-client:3.0.10.Final" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.8" level="project" />
-    <orderEntry type="library" name="Maven: InterfacesApi:InterfacesApi:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="InterfacesApi" level="project" />
   </component>
 </module>

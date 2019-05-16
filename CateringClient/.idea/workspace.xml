@@ -7,36 +7,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa3161fd-64b5-44ee-9dcc-983b4ba6d501" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../CateringApi/.idea/artifacts/CateringApi_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/.idea/artifacts/CateringApi_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/.idea/libraries/Maven__InterfacesApi_InterfacesApi_1_0_SNAPSHOT.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/CateringApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/CateringApi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/CHUJ.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/CHUJ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/ExampleBeen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/ExampleBeen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/META-INF/CateringApi.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/CHUJ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/CHUJ.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/InterfacesApi-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/InterfacesApi-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/bean/ExampleBeen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/bean/ExampleBeen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/InterfacesApi-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/CHUJ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/CHUJ.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/InterfacesApi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/bean/ExampleBeen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/bean/ExampleBeen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CateringClient_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CateringClient_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__InterfacesApi_InterfacesApi_1_0_SNAPSHOT.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CateringClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CateringClient.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/ExampleBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/test/ExampleBean.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExampleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/ExampleBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExampleBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/ExampleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/ExampleBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/ExampleBean.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterfacesApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/InterfacesApi.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/src/main/java/ExampleInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/src/main/java/test/ExampleInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/InterfacesApi-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/target/InterfacesApi-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/classes/ExampleInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/target/classes/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/InterfacesApi-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,16 +52,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+            <state relative-caret-position="469">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
-          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
           <provider selected="true" editor-type-id="text-editor" />
+          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -71,21 +72,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="264">
               <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/ExampleBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bean/ExampleBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="330">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,9 +113,10 @@
       <list>
         <option value="$PROJECT_DIR$/web/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/ExampleBean.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ExampleInterface.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/test/ExampleBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bean/ExampleBean.java" />
       </list>
     </option>
   </component>
@@ -161,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,11 +172,6 @@
             <path>
               <item name="CateringClient" type="b2602c69:ProjectViewProjectNode" />
               <item name="CateringClient" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CateringClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CateringClient" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -197,7 +193,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CateringClient" type="b2602c69:ProjectViewProjectNode" />
@@ -210,26 +206,22 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CateringClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558036968095" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558039430148" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -259,12 +251,12 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="SERVER" value="" />
+        <option name="SERVER" />
         <option name="BINDING_SET_NAME" value="" />
         <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="" />
+        <option name="SERVER_GROUP" value="main-server-group" />
         <option name="USERNAME" value="" />
-        <option name="PASSWORD" value="" />
+        <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="JBoss" />
       <RunnerSettings RunnerId="Debug">
@@ -336,16 +328,17 @@
       <workItem from="1558001680677" duration="1524000" />
       <workItem from="1558006471624" duration="2003000" />
       <workItem from="1558030195581" duration="6360000" />
+      <workItem from="1558037807738" duration="1784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9887000" />
+    <option name="totallyTimeSpent" value="11671000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27912253" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28198293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -353,11 +346,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Tool Output" />
-      <window_info anchor="bottom" id="ANTLR Preview" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.15548281" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4355363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -366,15 +357,16 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.32827735" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="PlantUML" />
+      <window_info anchor="bottom" id="Tool Output" order="15" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.16187595" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.16151386" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="JSF" order="6" />
@@ -383,6 +375,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="PlantUML" order="12" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,20 +383,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab8/RestClient/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar!/ExampleInterface.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -414,31 +393,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExampleInterface.java" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        <state relative-caret-position="469">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExampleInterface.java">
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/ExampleBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/ExampleBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="330">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -449,7 +431,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>unnamed</last-edited>
+          <last-edited>CateringClient:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -523,7 +505,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.sun.istack:istack-commons-runtime:3.0.7</last-edited>
+          <last-edited>InterfacesApi</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

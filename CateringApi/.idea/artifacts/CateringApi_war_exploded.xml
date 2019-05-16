@@ -44,7 +44,7 @@
           <element id="library" level="project" name="Maven: org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec:1.0.1.Final" />
           <element id="library" level="project" name="Maven: org.jboss.resteasy:resteasy-client:3.0.10.Final" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.8" />
-          <element id="library" level="project" name="Maven: InterfacesApi:InterfacesApi:1.0-SNAPSHOT" />
+          <element id="library" level="project" name="InterfacesApi" />
         </element>
       </element>
       <element id="directory" name="META-INF">
