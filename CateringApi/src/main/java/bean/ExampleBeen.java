@@ -1,5 +1,6 @@
 package bean;
 
+
 import test.ExampleInterface;
 
 import javax.ejb.Remote;
