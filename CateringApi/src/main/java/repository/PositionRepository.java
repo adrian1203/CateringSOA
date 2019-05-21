@@ -45,4 +45,5 @@ public class PositionRepository {
         em.remove(position);
         em.getTransaction().commit();
     }
+
 }

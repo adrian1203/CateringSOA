@@ -30,4 +30,7 @@ public class Position {
     @ManyToMany(mappedBy = "positionSet")
     private Set<Order> orderSet = new HashSet<Order>();
 
+    @ManyToOne
+    private Category category;
+
 }

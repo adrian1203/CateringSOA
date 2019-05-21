@@ -32,6 +32,7 @@ public class LoginBean implements Serializable {
     }
 
 
+
     public String getLogin() {
         return login;
     }

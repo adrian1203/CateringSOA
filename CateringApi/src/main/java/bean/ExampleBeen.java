@@ -13,5 +13,5 @@ public class ExampleBeen implements ExampleInterface {
 
     public String Hello() {
         return "Jebać EJB bo jest kurwa od tego REST!!!!";
-    }
+    };
 }
