@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
 
 <h:head>
     <title>Katering - Logowanie</title>
@@ -14,33 +15,33 @@
 <h:body>
     <h2>Przeglądaj pozycje</h2>
 
-    <h:panelGrid columns="2">
+    <h:form>
 
-        <h:outputText value="Wybierz kategorię"/>
-        <h:selectOneMenu value="#{PositionBean.selectedCategory}">
-            <f:selectItem itemLabel="" itemValue=""/>
-            <f:selectItem itemLabel="Śniadania" itemValue="sniadania"/>
-            <f:selectItem itemLabel="Lanche" itemValue="lanche"/>
-            <f:selectItem itemLabel="Obiady" itemValue="obiady"/>
-            <f:selectItem itemLabel="Kolacje" itemValue="kolacje"/>
-            <f:selectItem itemLabel="Przekąski" itemValue="przekaski"/>
-            <f:selectItem itemLabel="Napoje" itemValue="napoje"/>
+        <h:panelGrid columns="2">
 
-        </h:selectOneMenu>
+            <h:outputText value="Wybierz kategorię"/>
+            <h:selectOneMenu value="#{PositionBean.selectedCategory}">
+                <f:selectItem itemLabel="" itemValue=""/>
+                <c:forEach var="ct" items="#{PositionBean.productEJBInterface.allCategory}" >
+                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.name}"/>
+                </c:forEach>
+                <f:ajax event="click" execute="@this" render="@form"/>
+            </h:selectOneMenu>
 
-        <h:outputText value="Wybierz danie"/>
-        <h:selectOneMenu value="#{PositionBean.selectedSubCategory}" rendered="#{PositionBean.selectedCategory ne ''}">
-            <f:selectItem itemLabel="Śniadania" itemValue="sniadania"/>
-            <f:selectItem itemLabel="Lanche" itemValue="lanche"/>
-            <f:selectItem itemLabel="Obiady" itemValue="obiady"/>
-            <f:selectItem itemLabel="Kolacje" itemValue="kolacje"/>
-            <f:selectItem itemLabel="Przekąski" itemValue="przekaski"/>
-            <f:selectItem itemLabel="Napoje" itemValue="napoje"/>
-        </h:selectOneMenu>
+            <h:outputText value="Wybierz danie"/>
+            <h:selectOneMenu value="#{PositionBean.selectedSubCategory}" rendered="#{PositionBean.selectedCategory ne ''}">
+                <f:selectItem itemLabel="" itemValue=""/>
+                <c:forEach var="ps" items="#{PositionBean.productEJBInterface.allPosition}" >
+                    <f:selectItem itemLabel="#{ps.name}" itemValue="#{ps.name}"/>
+                </c:forEach>
+            </h:selectOneMenu>
 
+        </h:panelGrid>
 
-    </h:panelGrid>
+        <h:commandButton value="Dodaj kategorię" action="/add_category?faces-redirect=true"/>
+        <h:commandButton value="Dodaj pozycję" action="/add_position?faces-redirect=true"/>
 
+    </h:form>
 
 </h:body>
 

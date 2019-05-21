@@ -1,3 +1,5 @@
-2019-05-21 11:53:38,997 WARN  [DefaultSoapUICore] Missing folder [C:\Users\kubas\ext] for external libraries
-2019-05-21 11:53:39,456 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\kubas\soapui-settings.xml]
-2019-05-21 11:53:40,249 INFO  [WorkspaceImpl] Loading workspace from [C:\Users\kubas\intellij-soapui-workspace.xml]
+2019-05-21 21:26:13,866 WARN  [DefaultSoapUICore] Missing folder [C:\Users\kubas\ext] for external libraries
+2019-05-21 21:26:14,099 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\kubas\soapui-settings.xml]
+2019-05-21 21:26:14,553 INFO  [WorkspaceImpl] Loading workspace from [C:\Users\kubas\intellij-soapui-workspace.xml]
+2019-05-21 21:32:35,654 INFO  [WorkspaceImpl] Saved workspace to [C:\Users\kubas\intellij-soapui-workspace.xml]
+2019-05-21 21:32:35,657 INFO  [DefaultSoapUICore] Settings saved to [C:\Users\kubas\soapui-settings.xml]

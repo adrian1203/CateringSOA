@@ -2,7 +2,6 @@ package bean;
 
 
 import domain.CateringUser;
-import ejb.ProductEJBInterface;
 import ejb.UserEJBInterface;
 import service.CateringUserService;
 
