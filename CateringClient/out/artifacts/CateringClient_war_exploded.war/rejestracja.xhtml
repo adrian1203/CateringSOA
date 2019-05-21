@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Katering - Rejestracja</title>
+</h:head>
+
+<h:body>
+    <h2>Rejestracja</h2>
+
+    <h:form>
+
+        <h:panelGrid columns="2">
+
+            <h:outputText value="Nazwa użytkownika "/>
+            <h:inputText value="#{LoginBean.login}"/>
+
+            <h:outputText value="Hasło "/>
+            <h:inputText value="#{LoginBean.password}"/>
+
+            <h:outputText value="Imię "/>
+            <h:inputText value="#{LoginBean.firstName}"/>
+
+            <h:outputText value="Nazwisko "/>
+            <h:inputText value="#{LoginBean.lastName}"/>
+
+            <h:outputText value="Email "/>
+            <h:inputText value="#{LoginBean.email}"/>
+
+            <h:outputText value="City "/>
+            <h:inputText value="#{LoginBean.city}"/>
+
+            <h:outputText value="Street"/>
+            <h:inputText value="#{LoginBean.street}"/>
+
+            <h:outputText value="Flat number "/>
+            <h:inputText value="#{LoginBean.flatNumber}"/>
+
+            <h:outputText value="Typ użytkownika"/>
+            <h:selectOneRadio value="#{LoginBean.userRole}">
+                <f:selectItem itemLabel="Customer" itemValue="customer"/>
+                <f:selectItem itemLabel="Admin" itemValue="admin"/>
+                <f:selectItem itemLabel="Manager" itemValue="manager"/>
+                <f:selectItem itemLabel="Worker" itemValue="worker"/>
+                <f:selectItem itemLabel="Supplier" itemValue="supplier"/>
+            </h:selectOneRadio>
+
+        </h:panelGrid>
+
+        <h:commandButton value="Zarejestruj" action="#{LoginBean.ProcessRegistration()}"/>
+        <h:commandButton value="Logowanie" action="/logowanie.xhtml?faces-redirect=true"/>
+
+    </h:form>
+</h:body>
+
+</html>

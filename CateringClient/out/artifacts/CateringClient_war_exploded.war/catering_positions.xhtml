@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Katering - Logowanie</title>
+</h:head>
+
+<h:body>
+    <h2>Przeglądaj pozycje</h2>
+
+    <h:panelGrid columns="2">
+
+        <h:outputText value="Wybierz kategorię"/>
+        <h:selectOneMenu value="#{PositionBean.selectedCategory}">
+            <f:selectItem itemLabel="" itemValue=""/>
+            <f:selectItem itemLabel="Śniadania" itemValue="sniadania"/>
+            <f:selectItem itemLabel="Lanche" itemValue="lanche"/>
+            <f:selectItem itemLabel="Obiady" itemValue="obiady"/>
+            <f:selectItem itemLabel="Kolacje" itemValue="kolacje"/>
+            <f:selectItem itemLabel="Przekąski" itemValue="przekaski"/>
+            <f:selectItem itemLabel="Napoje" itemValue="napoje"/>
+        </h:selectOneMenu>
+
+        <h:outputText value="Wybierz danie"/>
+        <h:selectOneMenu value="#{PositionBean.selectedSubCategory}" rendered="#{PositionBean.selectedCategory ne ''}">
+            <f:selectItem itemLabel="Śniadania" itemValue="sniadania"/>
+            <f:selectItem itemLabel="Lanche" itemValue="lanche"/>
+            <f:selectItem itemLabel="Obiady" itemValue="obiady"/>
+            <f:selectItem itemLabel="Kolacje" itemValue="kolacje"/>
+            <f:selectItem itemLabel="Przekąski" itemValue="przekaski"/>
+            <f:selectItem itemLabel="Napoje" itemValue="napoje"/>
+        </h:selectOneMenu>
+
+
+    </h:panelGrid>
+
+
+</h:body>
+
+</html>
