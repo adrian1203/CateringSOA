@@ -10,7 +10,6 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 import java.util.List;
 
-@RequestScoped
 public class OrderRepository {
 
     private EntityManagerFactory factory;

@@ -1,6 +1,5 @@
 package repository;
 
-import domain.CateringUser;
 import domain.Position;
 
 import javax.persistence.EntityManager;
@@ -18,7 +17,7 @@ public class PositionRepository {
         em = factory.createEntityManager();
     }
 
-    public List<CateringUser> findAllPosition() {
+    public List<Position> findAllPosition() {
         Query query = em.createQuery("FROM Position ", Position.class);
         return query.getResultList();
     }

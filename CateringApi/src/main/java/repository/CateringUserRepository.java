@@ -45,4 +45,8 @@ public class CateringUserRepository {
         em.remove(cateringUser);
         em.getTransaction().commit();
     }
+
+    public CateringUser findUserByLogin(String login){
+        return em.createQuery("SELECT u From CateringUser u where u.login =:login", CateringUser.class).setParameter("login",login).getSingleResult();
+    }
 }

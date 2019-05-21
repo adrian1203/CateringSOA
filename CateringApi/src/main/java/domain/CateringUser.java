@@ -7,11 +7,12 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
-@Table(name = "catering_user")
+
 @Getter
 @Setter
 @NoArgsConstructor
+@Entity
+@Table(name = "catering_user")
 public class CateringUser implements Serializable {
 
     @Id

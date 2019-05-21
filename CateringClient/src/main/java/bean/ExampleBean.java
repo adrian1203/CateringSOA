@@ -10,10 +10,10 @@ import javax.faces.bean.SessionScoped;
 @ManagedBean(name = "ExampleBean")
 public class ExampleBean {
 
-    @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/ExampleBeen")
-    private ExampleInterface exampleInterface;
+//    @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/ExampleBeen")
+//    private ExampleInterface exampleInterface;
 
-    public String foo(){
-        return exampleInterface.Hello();
-    }
+//    public String foo(){
+//        return exampleInterface.Hello();
+//    }
 }
