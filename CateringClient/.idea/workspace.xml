@@ -7,57 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa3161fd-64b5-44ee-9dcc-983b4ba6d501" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/CateringApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/.idea/artifacts/CateringApi_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/.idea/artifacts/CateringApi_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/CateringApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/CateringApi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/ApplicationConfigREST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/ApplicationConfigREST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/CHUJ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/ProductEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/ProductEJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/CateringUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/CateringUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/CateringUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/CateringUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/PositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/PositionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/service/CateringUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/service/CateringUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/service/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/service/PositionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/ApplicationConfigREST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/ApplicationConfigREST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/CHUJ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/CateringUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/CateringUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/repository/OrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/repository/PositionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/repository/PositionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/CateringUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/CateringUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/InterfacesApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/InterfacesApi.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jboss-jaxb-api_2.3_spec-1.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/resteasy-client-3.0.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/resteasy-jaxb-provider-4.0.0.CR2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/domain/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/domain/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/domain/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/domain/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/repository/OrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/repository/PositionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/repository/PositionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/service/CateringUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/service/CateringUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ExampleBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ExampleBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/LoginBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/PositionBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/PositionBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/lib/InterfacesApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/lib/InterfacesApi.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/ExampleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/ExampleBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/PositionBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/PositionBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/ExampleBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean/ExampleBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean/LoginBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/PositionBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean/PositionBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/UserEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/UserEJB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterfacesApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -251,7 +203,7 @@
     <property name="DefaultHtmlFileTemplate" value="XHTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558455720892" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558455945686" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />

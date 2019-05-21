@@ -22,29 +22,34 @@ public class UserEJB implements UserEJBInterface {
     private CateringUserService cateringUserService;
 
     public Boolean logIn(String login, String haslo) {
+        //todo chyba trzeba zwracać stringa czy nieprawidowe dane, czy jest już zalogowany gdzieś
         List<CateringUser> loggedUsers = cateringApplicationManager.getLoggedUsers();
         CateringUser cateringUser = this.cateringUserService.logIn(login, haslo);
         if (cateringUser == null) {
             return false;
         }
-        if (
-                loggedUsers.contains(cateringUser)) {
-            return false;
+        if(loggedUsers!=null){
+            if (loggedUsers.contains(cateringUser)) {
+                return false;
+            }
         }
-        cateringApplicationManager.getLoggedUsers().add(cateringUser);
+        loggedUsers.add(cateringUser);
+        cateringApplicationManager.setLoggedUsers(loggedUsers);
         logedUser = cateringUser;
         return true;
     }
 
     public Boolean logOut() {
-        cateringApplicationManager.getLoggedUsers().remove(logedUser);
+        List<CateringUser> loggedUsers = cateringApplicationManager.getLoggedUsers();
+        loggedUsers.remove(logedUser);
+        cateringApplicationManager.setLoggedUsers(loggedUsers);
         logedUser = null;
         return true;
     }
 
     public Boolean register(String login, String password, String firstName, String lastName, String email, String city, String street, String flatNumber, String userRole) {
 
-        return cateringUserService.createUser(login,password,firstName,lastName,email,city,street,flatNumber,userRole);
+        return cateringUserService.createUser(login, password, firstName, lastName, email, city, street, flatNumber, userRole);
     }
 
     public Boolean changePassword(String s, String s1) {
