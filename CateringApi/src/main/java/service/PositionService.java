@@ -39,6 +39,10 @@ public class PositionService {
         positionRepository.createPosition(position);
     }
 
+    public Position getPositionById(Long id){
+        return positionRepository.findPositionById(id);
+    }
+
     public void deletePosition(Long id) {
         this.positionRepository.deletePosition(id);
     }

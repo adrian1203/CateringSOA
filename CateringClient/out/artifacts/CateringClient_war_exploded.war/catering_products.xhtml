@@ -21,18 +21,18 @@
 
             <h:outputText value="Wybierz kategorię"/>
             <h:selectOneMenu value="#{ProductsBean.selectedCategory}">
-                <f:selectItem itemLabel="" itemValue=""/>
+                <f:selectItem itemLabel="None" itemValue="-1"/>
                 <c:forEach var="ct" items="#{ProductsBean.productEJBInterface.allCategory}" >
-                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct}"/>
+                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.id}"/>
                 </c:forEach>
                 <f:ajax event="click" execute="@this" render="@form"/>
             </h:selectOneMenu>
 
             <h:outputText value="Wybierz danie"/>
             <h:selectOneMenu value="#{ProductsBean.selectedPosition}" rendered="#{ProductsBean.selectedCategory ne null}">
-                <f:selectItem itemLabel="" itemValue=""/>
-                <c:forEach var="ps" items="#{ProductsBean.selectedCategory.positionSet}" >
-                    <f:selectItem itemLabel="#{ps.name}" itemValue="#{ps}"/>
+                <f:selectItem itemLabel="None" itemValue="-1"/>
+                <c:forEach var="ps" items="#{ProductsBean.GetFilteredPositions()}" >
+                    <f:selectItem itemLabel="#{ps.name}" itemValue="#{ps.id}"/>
                 </c:forEach>
             </h:selectOneMenu>
 

@@ -59,6 +59,14 @@ public class ProductEJB implements ProductEJBInterface {
         positionService.createPosition(name, description, price, categoryId, false);
     }
 
+    public Object getCategoryById(Long id){
+        return categoryService.getCategoryById(id);
+    }
+
+    public Object getPositionById(Long id){
+        return positionService.getPositionById(id);
+    }
+
     public ProductEJB() {
         this.categoryService = new CategoryService();
         this.positionService = new PositionService();
