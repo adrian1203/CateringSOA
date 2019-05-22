@@ -23,9 +23,11 @@ public class ModifyProductBean implements Serializable {
     private ProductEJBInterface productEJBInterface;
 
 
+    //Constructor
     public ModifyProductBean(){
         posCategory=-1L;
     }
+
 
 
     public String AddNewCategory(){
@@ -34,6 +36,7 @@ public class ModifyProductBean implements Serializable {
     }
 
     public String AddNewPosition(){
+        System.out.println("AAAD: " + posName + "," + posDesc + "," + posPrice + "," + posCategory);
         if(posCategory > -1L)
             productEJBInterface.createPosition(posName,posDesc,posPrice,posCategory);
         posCategory=-1L;

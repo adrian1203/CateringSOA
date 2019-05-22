@@ -1,5 +1,6 @@
 package service;
 
+import domain.Category;
 import domain.Position;
 import repository.CategoryRepository;
 import repository.PositionRepository;
@@ -28,7 +29,9 @@ public class PositionService {
         position.setDescription(description);
         position.setName(name);
         position.setPrice(price);
-        position.setCategory(categoryRepository.findCategoryById(categoryId));
+        Category c = categoryRepository.findCategoryById(categoryId);
+        System.out.println("WARTOSC CATEGORY: " + (c==null?"NULL":"NOT NULL"));
+        position.setCategory(c);
         positionRepository.createPosition(position);
     }
 
