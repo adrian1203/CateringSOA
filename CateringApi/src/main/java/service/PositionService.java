@@ -1,5 +1,6 @@
 package service;
 
+import domain.Category;
 import domain.Position;
 import repository.CategoryRepository;
 import repository.PositionRepository;
@@ -28,7 +29,8 @@ public class PositionService {
         position.setDescription(description);
         position.setName(name);
         position.setPrice(price);
-        position.setCategory(categoryRepository.findCategoryById(categoryId));
+        Category category = categoryRepository.findCategoryById(categoryId);
+        position.setCategory(category);
         positionRepository.createPosition(position);
     }
 

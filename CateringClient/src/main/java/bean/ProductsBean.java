@@ -14,7 +14,7 @@ public class ProductsBean implements Serializable {
     private String selectedCategory;
     private String selectedSubCategory;
 
-    @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/ProductEJB")
+    //@EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/ProductEJB")
     private ProductEJBInterface productEJBInterface;
 
     public ProductsBean(){
