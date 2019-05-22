@@ -5,8 +5,8 @@ import javax.faces.bean.ManagedBean;
 import java.io.Serializable;
 
 @SessionScoped
-@ManagedBean(name = "ModifyPositionBean")
-public class ModifyPositionBean implements Serializable {
+@ManagedBean(name = "ModifyProductBean")
+public class ModifyProductBean implements Serializable {
 
     private String posName;
     private String posDesc;
@@ -17,17 +17,17 @@ public class ModifyPositionBean implements Serializable {
     private String catDesc;
 
 
-    public ModifyPositionBean(){
+    public ModifyProductBean(){
 
     }
 
 
     public String AddNewCategory(){
-        return "/catering_positions.xhtml?faces-redirect=true";
+        return "/catering_products.xhtml?faces-redirect=true";
     }
 
     public String AddNewPosition(){
-        return "/catering_positions.xhtml?faces-redirect=true";
+        return "/catering_products.xhtml?faces-redirect=true";
     }
 
 

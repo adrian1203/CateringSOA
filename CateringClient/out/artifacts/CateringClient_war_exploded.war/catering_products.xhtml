@@ -20,18 +20,18 @@
         <h:panelGrid columns="2">
 
             <h:outputText value="Wybierz kategorię"/>
-            <h:selectOneMenu value="#{PositionBean.selectedCategory}">
+            <h:selectOneMenu value="#{ProductsBean.selectedCategory}">
                 <f:selectItem itemLabel="" itemValue=""/>
-                <c:forEach var="ct" items="#{PositionBean.productEJBInterface.allCategory}" >
+                <c:forEach var="ct" items="#{ProductsBean.productEJBInterface.allCategory}" >
                     <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.name}"/>
                 </c:forEach>
                 <f:ajax event="click" execute="@this" render="@form"/>
             </h:selectOneMenu>
 
             <h:outputText value="Wybierz danie"/>
-            <h:selectOneMenu value="#{PositionBean.selectedSubCategory}" rendered="#{PositionBean.selectedCategory ne ''}">
+            <h:selectOneMenu value="#{ProductsBean.selectedSubCategory}" rendered="#{ProductsBean.selectedCategory ne ''}">
                 <f:selectItem itemLabel="" itemValue=""/>
-                <c:forEach var="ps" items="#{PositionBean.productEJBInterface.allPosition}" >
+                <c:forEach var="ps" items="#{ProductsBean.productEJBInterface.allPosition}" >
                     <f:selectItem itemLabel="#{ps.name}" itemValue="#{ps.name}"/>
                 </c:forEach>
             </h:selectOneMenu>

@@ -8,8 +8,8 @@ import javax.faces.bean.ManagedBean;
 import java.io.Serializable;
 
 @SessionScoped
-@ManagedBean(name = "PositionBean")
-public class PositionBean implements Serializable {
+@ManagedBean(name = "ProductsBean")
+public class ProductsBean implements Serializable {
 
     private String selectedCategory;
     private String selectedSubCategory;
@@ -17,7 +17,7 @@ public class PositionBean implements Serializable {
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/ProductEJB")
     private ProductEJBInterface productEJBInterface;
 
-    public PositionBean(){
+    public ProductsBean(){
         selectedCategory="";
     }
 

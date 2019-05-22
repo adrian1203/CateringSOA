@@ -21,23 +21,23 @@
         <h:panelGrid columns="2">
 
             <h:outputText value="Nazwa "/>
-            <h:inputText value="#{ModifyPositionBean.posName}"/>
+            <h:inputText value="#{ModifyProductBean.posName}"/>
 
             <h:outputText value="Opis "/>
-            <h:inputText value="#{ModifyPositionBean.posDesc}"/>
+            <h:inputText value="#{ModifyProductBean.posDesc}"/>
 
             <h:outputText value="Cena "/>
-            <h:inputText value="#{ModifyPositionBean.posPrice}"/>
+            <h:inputText value="#{ModifyProductBean.posPrice}"/>
 
             <h:outputText value="Kategoria "/>
-            <h:selectOneMenu value="#{ModifyPositionBean.posCategory}">
+            <h:selectOneMenu value="#{ModifyProductBean.posCategory}">
                 <f:selectItem itemLabel="" itemValue=""/>
-                <c:forEach var="ct" items="#{PositionBean.productEJBInterface.allCategory}" >
+                <c:forEach var="ct" items="#{ProductsBean.productEJBInterface.allCategory}" >
                     <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.name}"/>
                 </c:forEach>
             </h:selectOneMenu>
 
-            <h:commandButton value="Dodaj" action="#{ModifyPositionBean.AddNewCategory()}"/>
+            <h:commandButton value="Dodaj" action="#{ModifyProductBean.AddNewPosition()}"/>
 
         </h:panelGrid>
 

@@ -24,7 +24,7 @@ public class LoginBean implements Serializable {
 
 
     public String ProcessLogin(){
-        return "/catering_positions.xhtml?faces-redirect=true";
+        return "/catering_products.xhtml?faces-redirect=true";
     }
 
     public String ProcessRegistration(){
