@@ -27,6 +27,8 @@ public class Position implements Serializable {
     private String description;
     @Column
     private Float price;
+    @Column
+    private Boolean toApproved;
 
     @ManyToMany(mappedBy = "positionSet")
     private Set<Order> orderSet = new HashSet<Order>();

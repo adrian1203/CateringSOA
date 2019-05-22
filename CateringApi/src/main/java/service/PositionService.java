@@ -28,12 +28,14 @@ public class PositionService {
         return positionRepository.findAllPosition();
     }
 
-    public void createPosition(String name, String description, Float price, Long categoryId) {
+    public void createPosition(String name, String description, Float price, Long categoryId, Boolean toApproved) {
         Position position = new Position();
         position.setDescription(description);
         position.setName(name);
         position.setPrice(price);
-        position.setCategory(categoryRepository.findCategoryById(categoryId));
+        position.setToApproved(toApproved);
+        Category category = categoryRepository.findCategoryById(categoryId);
+        position.setCategory(category);
         positionRepository.createPosition(position);
     }
 
