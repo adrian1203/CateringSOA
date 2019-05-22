@@ -8,40 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fa3161fd-64b5-44ee-9dcc-983b4ba6d501" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../CateringApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/PermanentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/PermanentOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/PermanetOrderDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/PermanetOrderDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/domain/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/CateringApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/CateringApi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/PermanentOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/PermanentOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/PermanetOrderDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/PermanetOrderDate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/domain/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/domain/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/domain/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/domain/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/domain/PermanentOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/domain/PermanentOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/domain/PermanetOrderDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/domain/PermanetOrderDate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/target/classes/domain/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/classes/domain/Position.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CateringClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CateringClient.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/LoginBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ModifyProductBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ModifyProductBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ProductsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ProductsBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/add_category.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/add_category.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/add_position.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/add_position.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/logowanie.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/rejestracja.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/LoginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/LoginBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/ModifyProductBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/ModifyProductBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/ProductsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/ProductsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean/LoginBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/ModifyProductBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean/ModifyProductBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/ProductsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean/ProductsBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/add_position.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/add_position.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/logowanie.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/rejestracja.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/registration.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/bean/ModifyProductBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="27" column="5" selection-start-line="25" selection-start-column="30" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="242">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#624#625#0" expanded="true" />
@@ -231,7 +200,7 @@
     <property name="DefaultHtmlFileTemplate" value="XHTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558541743572" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558542127500" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -353,12 +322,12 @@
       <workItem from="1558465297134" duration="1136000" />
       <workItem from="1558466789748" duration="5678000" />
       <workItem from="1558528359291" duration="1173000" />
-      <workItem from="1558537546321" duration="2370000" />
+      <workItem from="1558537546321" duration="2610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39249000" />
+    <option name="totallyTimeSpent" value="39489000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,8 +511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/ModifyProductBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="27" column="5" selection-start-line="25" selection-start-column="30" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="242">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#624#625#0" expanded="true" />
