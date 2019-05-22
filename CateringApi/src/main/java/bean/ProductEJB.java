@@ -56,7 +56,7 @@ public class ProductEJB implements ProductEJBInterface {
     }
 
     public void createPosition(String name, String description, Float price, Long categoryId) {
-        positionService.createPosition(name, description, price, categoryId);
+        positionService.createPosition(name, description, price, categoryId, false);
     }
 
     public ProductEJB() {

@@ -14,6 +14,7 @@ public class PositionService {
 
     public PositionService() {
         this.positionRepository = new PositionRepository();
+        this.categoryRepository = new CategoryRepository();
     }
 
     public List<Position> findPositionByCategoryId(Long id) {
@@ -24,11 +25,12 @@ public class PositionService {
         return positionRepository.findAllPosition();
     }
 
-    public void createPosition(String name, String description, Float price, Long categoryId) {
+    public void createPosition(String name, String description, Float price, Long categoryId, Boolean toApproved) {
         Position position = new Position();
         position.setDescription(description);
         position.setName(name);
         position.setPrice(price);
+        position.setToApproved(toApproved);
         Category category = categoryRepository.findCategoryById(categoryId);
         position.setCategory(category);
         positionRepository.createPosition(position);
