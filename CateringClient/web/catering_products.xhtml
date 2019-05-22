@@ -23,16 +23,16 @@
             <h:selectOneMenu value="#{ProductsBean.selectedCategory}">
                 <f:selectItem itemLabel="" itemValue=""/>
                 <c:forEach var="ct" items="#{ProductsBean.productEJBInterface.allCategory}" >
-                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.name}"/>
+                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.id}"/>
                 </c:forEach>
                 <f:ajax event="click" execute="@this" render="@form"/>
             </h:selectOneMenu>
 
             <h:outputText value="Wybierz danie"/>
-            <h:selectOneMenu value="#{ProductsBean.selectedSubCategory}" rendered="#{ProductsBean.selectedCategory ne ''}">
+            <h:selectOneMenu value="#{ProductsBean.selectedPosition}" rendered="#{ProductsBean.selectedCategory gt -1}">
                 <f:selectItem itemLabel="" itemValue=""/>
-                <c:forEach var="ps" items="#{ProductsBean.productEJBInterface.allPosition}" >
-                    <f:selectItem itemLabel="#{ps.name}" itemValue="#{ps.name}"/>
+                <c:forEach var="ps" items="#{ProductsBean.productEJBInterface.}" >
+                    <f:selectItem itemLabel="#{ps.name}" itemValue="#{ps}"/>
                 </c:forEach>
             </h:selectOneMenu>
 

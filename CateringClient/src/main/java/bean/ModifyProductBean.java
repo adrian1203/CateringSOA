@@ -28,15 +28,12 @@ public class ModifyProductBean implements Serializable {
         posCategory=-1L;
     }
 
-
-
     public String AddNewCategory(){
         productEJBInterface.createCategory(catName,catDesc);
         return "/catering_products.xhtml?faces-redirect=true";
     }
 
     public String AddNewPosition(){
-        System.out.println("AAAD: " + posName + "," + posDesc + "," + posPrice + "," + posCategory);
         if(posCategory > -1L)
             productEJBInterface.createPosition(posName,posDesc,posPrice,posCategory);
         posCategory=-1L;

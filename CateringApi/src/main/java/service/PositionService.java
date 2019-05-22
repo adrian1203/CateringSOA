@@ -6,14 +6,18 @@ import repository.CategoryRepository;
 import repository.PositionRepository;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 public class PositionService {
 
     private PositionRepository positionRepository;
     private CategoryRepository categoryRepository;
+    Logger logger = Logger.getLogger(PositionService.class.getName());
+
 
     public PositionService() {
         this.positionRepository = new PositionRepository();
+        this.categoryRepository = new CategoryRepository();
     }
 
     public List<Position> findPositionByCategoryId(Long id) {
@@ -29,9 +33,7 @@ public class PositionService {
         position.setDescription(description);
         position.setName(name);
         position.setPrice(price);
-        Category c = categoryRepository.findCategoryById(categoryId);
-        System.out.println("WARTOSC CATEGORY: " + (c==null?"NULL":"NOT NULL"));
-        position.setCategory(c);
+        position.setCategory(categoryRepository.findCategoryById(categoryId));
         positionRepository.createPosition(position);
     }
 
