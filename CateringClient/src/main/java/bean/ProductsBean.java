@@ -21,6 +21,7 @@ public class ProductsBean implements Serializable {
         selectedCategory="";
     }
 
+
     public ProductEJBInterface getProductEJBInterface() {
         return productEJBInterface;
     }

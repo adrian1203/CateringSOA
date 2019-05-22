@@ -33,7 +33,7 @@
             <h:selectOneMenu value="#{ModifyProductBean.posCategory}">
                 <f:selectItem itemLabel="" itemValue=""/>
                 <c:forEach var="ct" items="#{ProductsBean.productEJBInterface.allCategory}" >
-                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.name}"/>
+                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.id}"/>
                 </c:forEach>
             </h:selectOneMenu>
 

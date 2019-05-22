@@ -18,11 +18,15 @@
 
     <h:form>
 
-        <h:outputText value="Nazwa "/>
-        <h:inputText value="#{ModifyProductBean.catName}"/>
+        <h:panelGrid columns="2">
 
-        <h:outputText value="Opis "/>
-        <h:inputText value="#{ModifyProductBean.catDesc}"/>
+            <h:outputText value="Nazwa "/>
+            <h:inputText value="#{ModifyProductBean.catName}"/>
+
+            <h:outputText value="Opis "/>
+            <h:inputText value="#{ModifyProductBean.catDesc}"/>
+
+        </h:panelGrid>
 
         <h:commandButton value="Dodaj" action="#{ModifyProductBean.AddNewCategory()}"/>
 

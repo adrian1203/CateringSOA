@@ -28,7 +28,7 @@ public class LoginBean implements Serializable {
     }
 
     public String ProcessRegistration(){
-        return "/logowanie.xhtml?faces-redirect=true";
+        return "/registration.xhtml?faces-redirect=true";
     }
 
 

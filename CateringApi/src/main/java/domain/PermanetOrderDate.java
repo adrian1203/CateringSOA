@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Getter
@@ -13,7 +14,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Entity
 @Table(name = "parmenent_order_date")
-public class PermanetOrderDate {
+public class PermanetOrderDate implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "CUST_GEN")

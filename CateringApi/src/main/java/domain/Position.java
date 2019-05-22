@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,7 +15,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Entity
 @Table(name = "position")
-public class Position {
+public class Position implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "CUST_GEN")
