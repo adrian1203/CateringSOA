@@ -47,6 +47,10 @@ public class CateringUserRepository {
     }
 
     public CateringUser findUserByLogin(String login){
-        return em.createQuery("SELECT u From CateringUser u where u.login =:login", CateringUser.class).setParameter("login",login).getSingleResult();
+        Query query = em.createQuery("SELECT u From CateringUser u where u.login =:login", CateringUser.class).setParameter("login",login);
+        if(query.getResultList().isEmpty())
+            return null;
+        else
+            return (CateringUser)query.getSingleResult();
     }
 }

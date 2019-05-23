@@ -23,11 +23,12 @@ public class CateringUserService {
     public CateringUser logIn(String login, String password){
 
         CateringUser cateringUser=cateringUserRepository.findUserByLogin(login);
-        if(cateringUser.getPassword().equals(password)){
+        if(cateringUser != null && cateringUser.getPassword().equals(password)){
             return cateringUser;
         }
         return null;
     }
+
     public Boolean createUser(String login, String password, String firstName, String lastName, String email, String city, String street, String flatNumber, String userRole) {
         CateringUser cateringUser = new CateringUser();
         cateringUser.setLogin(login);

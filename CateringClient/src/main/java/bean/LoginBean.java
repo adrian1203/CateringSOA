@@ -1,8 +1,13 @@
 package bean;
 
+import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.bean.ManagedBean;
 import java.io.Serializable;
+
+import domain.CateringUser;
+import domain.UserRole;
+import ejb.UserEJBInterface;
 
 @SessionScoped
 @ManagedBean(name = "LoginBean")
@@ -18,17 +23,52 @@ public class LoginBean implements Serializable {
     private String flatNumber;
     private String userRole;
 
+    private Boolean isLogIn;
+
+    @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/UserEJB")
+    private UserEJBInterface userEJBInterface;
+
+
     public LoginBean(){
         userRole="customer";
+        isLogIn=false;
+    }
+
+    public String CheckAuthorization(UserRole requiredRole){
+        if(isLogIn)
+        {
+            //Check if role allowed redirect
+            switch (requiredRole)
+            {
+                case CUSTOMER:
+                    break;
+                case ADMIN:
+                    break;
+                case WORKER:
+                    break;
+                case MANAGER:
+                    break;
+                case SUPPLIER:
+                    break;
+            }
+            return null;
+        }
+        else
+        {
+            //If not loged redirect to login page
+            return "/login.xhtml?faces-redirect=true";
+        }
     }
 
 
     public String ProcessLogin(){
+        isLogIn=userEJBInterface.logIn(login,password);
         return "/catering_products.xhtml?faces-redirect=true";
     }
 
     public String ProcessRegistration(){
-        return "/registration.xhtml?faces-redirect=true";
+        userEJBInterface.register(login,password,firstName,lastName,email,city,street,flatNumber,userRole);
+        return "/login.xhtml?faces-redirect=true";
     }
 
 
