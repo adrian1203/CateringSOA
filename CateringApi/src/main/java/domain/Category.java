@@ -31,7 +31,7 @@ public class Category implements Serializable {
 
     @JsonIgnoreProperties({"category"})
     @OneToMany(
-            fetch = FetchType.LAZY,
+            fetch = FetchType.EAGER,
             mappedBy = "category",
             cascade = CascadeType.ALL
     )
