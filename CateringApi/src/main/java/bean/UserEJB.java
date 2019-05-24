@@ -59,6 +59,10 @@ public class UserEJB implements UserEJBInterface {
         return null;
     }
 
+    public Object GetLoggedUser() {
+        return logedUser;
+    }
+
     public UserEJB() {
         this.cateringUserService = new CateringUserService();
     }

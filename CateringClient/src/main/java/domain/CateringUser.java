@@ -17,7 +17,7 @@ public class CateringUser implements Serializable {
     private String lastName;
     private String login;
     private String password;
-    private String userRole;
+    private UserRole userRole;
     private String email;
     private String city;
     private String street;

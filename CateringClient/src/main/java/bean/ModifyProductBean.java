@@ -3,8 +3,8 @@ package bean;
 import ejb.ProductEJBInterface;
 
 import javax.ejb.EJB;
-import javax.enterprise.context.SessionScoped;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 import java.io.Serializable;
 
 @SessionScoped

@@ -1,8 +1,8 @@
 package bean;
 
 import javax.ejb.EJB;
-import javax.enterprise.context.SessionScoped;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 import java.io.Serializable;
 
 import domain.CateringUser;
@@ -23,7 +23,7 @@ public class LoginBean implements Serializable {
     private String flatNumber;
     private String userRole;
 
-    private Boolean isLogIn;
+    private CateringUser loggedUser;
 
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/UserEJB")
     private UserEJBInterface userEJBInterface;
@@ -31,27 +31,42 @@ public class LoginBean implements Serializable {
 
     public LoginBean(){
         userRole="customer";
-        isLogIn=false;
     }
 
-    public String CheckAuthorization(UserRole requiredRole){
-        if(isLogIn)
+    public String CheckAuthorization(boolean enableRequiredRole, UserRole requiredRole){
+        if(loggedUser != null)
         {
-            //Check if role allowed redirect
-            switch (requiredRole)
+            if(enableRequiredRole && requiredRole != null)
             {
-                case CUSTOMER:
-                    break;
-                case ADMIN:
-                    break;
-                case WORKER:
-                    break;
-                case MANAGER:
-                    break;
-                case SUPPLIER:
-                    break;
+                //Check if role allowed redirect
+                switch (requiredRole)
+                {
+                    case CUSTOMER:
+                        if(loggedUser.getUserRole().equals("CUSTOMER"))
+                            return null;
+                            break;
+                    case ADMIN:
+                        if(loggedUser.getUserRole().equals("ADMIN"))
+                            return null;
+                        break;
+                    case WORKER:
+                        if(loggedUser.getUserRole().equals("WORKER"))
+                            return null;
+                        break;
+                    case MANAGER:
+                        if(loggedUser.getUserRole().equals("MANAGER"))
+                            return null;
+                        break;
+                    case SUPPLIER:
+                        if(loggedUser.getUserRole().equals("SUPPLIER"))
+                            return null;
+                        break;
+                }
+                //If not success redirect to main page
+                return "/catering_products.xhtml?faces-redirect=true";
             }
-            return null;
+            else
+                return null;
         }
         else
         {
@@ -62,15 +77,16 @@ public class LoginBean implements Serializable {
 
 
     public String ProcessLogin(){
-        isLogIn=userEJBInterface.logIn(login,password);
+        userEJBInterface.logIn(login,password);
+        loggedUser = (CateringUser) userEJBInterface.GetLoggedUser();
         return "/catering_products.xhtml?faces-redirect=true";
     }
+
 
     public String ProcessRegistration(){
         userEJBInterface.register(login,password,firstName,lastName,email,city,street,flatNumber,userRole);
         return "/login.xhtml?faces-redirect=true";
     }
-
 
 
     public String getLogin() {
