@@ -24,7 +24,7 @@ public class ProductEJB implements ProductEJBInterface {
     }
 
     public List<Object> getAllPosition() {
-        return new ArrayList<Object>(Arrays.asList(positionService.findAllPosition().toArray()));
+        return new ArrayList<Object>(Arrays.asList(positionService.findAllApprovedPosition().toArray()));
     }
 
     public void deletePosition(Long id) {
@@ -66,6 +66,15 @@ public class ProductEJB implements ProductEJBInterface {
     public Object getPositionById(Long id){
         return positionService.getPositionById(id);
     }
+
+    public List<Object> getPossitionToApproved() {
+        return new ArrayList<Object>(Arrays.asList(positionService.getPossitionToApproved().toArray()));
+    }
+
+    public void approvePossition(Long id){
+        positionService.approvePossition(id);
+    }
+
 
     public ProductEJB() {
         this.categoryService = new CategoryService();

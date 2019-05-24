@@ -20,7 +20,7 @@ public class OrderRepository {
         em = factory.createEntityManager();
     }
 
-    public List<CateringUser> findAllOrder() {
+    public List<Order> findAllOrder() {
         Query query = em.createQuery("FROM Order ", Order.class);
         return query.getResultList();
     }

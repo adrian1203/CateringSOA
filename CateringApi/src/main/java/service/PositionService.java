@@ -7,6 +7,7 @@ import repository.PositionRepository;
 
 import java.util.List;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 public class PositionService {
 
@@ -26,6 +27,12 @@ public class PositionService {
 
     public List<Position> findAllPosition(){
         return positionRepository.findAllPosition();
+    }
+
+
+    public List<Position> findAllApprovedPosition(){
+        return positionRepository.findAllPosition().stream().filter(e-> e.getToApproved()!=true).collect(Collectors.toList());
+
     }
 
     public void createPosition(String name, String description, Float price, Long categoryId, Boolean toApproved) {
@@ -48,6 +55,17 @@ public class PositionService {
     }
 
     public void updatePosition(Position position) {
+        this.positionRepository.updatePosition(position);
+    }
+
+
+    public List<Position> getPossitionToApproved(){
+        return positionRepository.findAllPosition().stream().filter(e-> e.getToApproved()==true).collect(Collectors.toList());
+
+    }
+    public void approvePossition(Long id){
+        Position position = positionRepository.findPositionById(id);
+        position.setToApproved(false);
         this.positionRepository.updatePosition(position);
     }
 

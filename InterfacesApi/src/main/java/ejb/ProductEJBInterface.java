@@ -16,6 +16,9 @@ public interface ProductEJBInterface {
     public void createPosition(String name, String description, Float price, Long categoryId);
     public Object getCategoryById(Long id);
     public Object getPositionById(Long id);
+    public List<Object> getPossitionToApproved();
+    public void approvePossition(Long id);
+
 
 
 }

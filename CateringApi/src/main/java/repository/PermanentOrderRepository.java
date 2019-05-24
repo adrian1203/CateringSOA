@@ -19,7 +19,7 @@ public class PermanentOrderRepository {
         em = factory.createEntityManager();
     }
 
-    public List<CateringUser> findAllPermanentOrder() {
+    public List<PermanentOrder> findAllPermanentOrder() {
         Query query = em.createQuery("FROM PermanentOrder ", PermanentOrder.class);
         return query.getResultList();
     }
