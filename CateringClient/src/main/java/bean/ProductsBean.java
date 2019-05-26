@@ -3,15 +3,13 @@ package bean;
 import domain.Category;
 import domain.Position;
 import ejb.ProductEJBInterface;
+import sun.invoke.util.Wrapper;
 
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @SessionScoped
 @ManagedBean(name = "ProductsBean")
@@ -22,11 +20,18 @@ public class ProductsBean implements Serializable {
 
     private List<Position> positionsOrder;
 
+    private boolean cyclicOrder;
+    private String orderDetails;
+    private Date orderDeliver;
+    private List<Date> cyclicOrderDeliver;
+
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/ProductEJB")
     private ProductEJBInterface productEJBInterface;
 
     public ProductsBean(){
         positionsOrder = new ArrayList<Position>();
+        cyclicOrderDeliver = new ArrayList<Date>();
+        cyclicOrder = false;
     }
 
     public Set<Position> GetFilteredPositions(){
@@ -63,6 +68,22 @@ public class ProductsBean implements Serializable {
         return sum;
     }
 
+    public void AddCyclicDates(){
+        if(orderDeliver!=null)
+        {
+            cyclicOrderDeliver.add(orderDeliver);
+        }
+    }
+
+    public void RemoveDateFromCyclicOrder(Date dt){
+        if(dt !=null)
+            cyclicOrderDeliver.remove(dt);
+    }
+
+
+
+    ///GETTERS AND SETTERS
+
 
     public List<Position> getPositionsOrder() {
         return positionsOrder;
@@ -94,5 +115,37 @@ public class ProductsBean implements Serializable {
 
     public void setSelectedPosition(Long selectedPosition) {
         this.selectedPosition = selectedPosition;
+    }
+
+    public boolean isCyclicOrder() {
+        return cyclicOrder;
+    }
+
+    public void setCyclicOrder(boolean cyclicOrder) {
+        this.cyclicOrder = cyclicOrder;
+    }
+
+    public String getOrderDetails() {
+        return orderDetails;
+    }
+
+    public void setOrderDetails(String orderDetails) {
+        this.orderDetails = orderDetails;
+    }
+
+    public Date getOrderDeliver() {
+        return orderDeliver;
+    }
+
+    public void setOrderDeliver(Date orderDeliver) {
+        this.orderDeliver = orderDeliver;
+    }
+
+    public List<Date> getCyclicOrderDeliver() {
+        return cyclicOrderDeliver;
+    }
+
+    public void setCyclicOrderDeliver(List<Date> cyclicOrderDeliver) {
+        this.cyclicOrderDeliver = cyclicOrderDeliver;
     }
 }

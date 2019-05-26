@@ -7,23 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa3161fd-64b5-44ee-9dcc-983b4ba6d501" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CateringApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/CateringApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/CateringApi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/ProductEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/ProductEJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/PermanentOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/PermanentOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/service/CateringUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/service/CateringUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/service/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/service/PositionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CateringClient_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CateringClient_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/ExampleBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/LoginBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/ModifyProductBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/ProductsBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/src/main/java/ejb/ProductEJBInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/src/main/java/ejb/ProductEJBInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/classes/ejb/ProductEJBInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/target/classes/ejb/ProductEJBInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CateringClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CateringClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/META-INF/CateringClient.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ProductsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ProductsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/lib/InterfacesApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/WEB-INF/lib/InterfacesApi.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/catering_currentOrder.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/catering_currentOrder.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/catering_products.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/catering_products.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CateringClient_war_exploded.war/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/ProductsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/ProductsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CateringClient-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CateringClient.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/catering_currentOrder.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/catering_currentOrder.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/catering_products.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/catering_products.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,17 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/catering_products.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/catering_currentOrder.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="304">
+              <caret line="40" column="28" selection-start-line="38" selection-start-column="16" selection-end-line="40" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -56,9 +50,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/bean/ProductsBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="309">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
               <folding>
+                <element signature="method#ProductsBean#0;class#ProductsBean#0" />
+                <element signature="method#AddSelectedPositionToOrder#0;class#ProductsBean#0" />
+                <element signature="method#SumOrderPrice#0;class#ProductsBean#0" />
+                <element signature="method#UpdateCyclicDates#0;class#ProductsBean#0" />
+                <element signature="method#RemoveDateFromCyclicOrder#0;class#ProductsBean#0" />
                 <element signature="e#2483#2484#0" expanded="true" />
                 <element signature="e#2539#2540#0" expanded="true" />
               </folding>
@@ -88,6 +87,8 @@
       <find>LOG</find>
       <find>LOG2</find>
       <find>NU</find>
+      <find>DATEE</find>
+      <find>LEE</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,7 +107,6 @@
         <option value="$PROJECT_DIR$/web/catering_positions.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/bean/ExampleBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/bean/PositionBean.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Order.java" />
@@ -116,9 +116,11 @@
         <option value="$PROJECT_DIR$/src/main/java/domain/CateringUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/bean/ModifyProductBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/bean/LoginBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bean/ProductsBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bean/ProductsBean.java" />
         <option value="$PROJECT_DIR$/web/catering_products.xhtml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/web/login.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/bean/ProductsBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bean/ProductsBean.java" />
         <option value="$PROJECT_DIR$/web/catering_currentOrder.xhtml" />
       </list>
     </option>
@@ -150,7 +152,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -165,7 +167,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,22 +213,29 @@
               <item name="CateringClient" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CateringClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CateringClient" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="XHTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558706354368" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558890113041" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -262,7 +270,7 @@
         <option name="DOMAIN" value="false" />
         <option name="SERVER_GROUP" />
         <option name="USERNAME" value="" />
-        <option name="PASSWORD" value="" />
+        <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="JBoss" />
       <RunnerSettings RunnerId="Debug">
@@ -349,11 +357,12 @@
       <workItem from="1558693102122" duration="6988000" />
       <workItem from="1558704674867" duration="1221000" />
       <workItem from="1558718267958" duration="648000" />
+      <workItem from="1558879651033" duration="8660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59007000" />
+    <option name="totallyTimeSpent" value="67667000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -365,10 +374,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3260212" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32942432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -399,7 +407,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.1609808" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="JSF" order="6" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -415,16 +423,8 @@
     <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab8/RestClient/pom.xml" />
     <entry file="jar://$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar!/ExampleInterface.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ExampleInterface.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab5/BooksJPA/impl/src/main/java/LibraryManager.java" />
     <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab5/BooksJPA/impl/src/main/java/Reader.java" />
-    <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab5/BooksJPA/client/src/main/java/BookBeen.java" />
     <entry file="file://$PROJECT_DIR$/web/rejestracja.xhtml" />
     <entry file="file://$PROJECT_DIR$/web/logowanie.xhtml" />
     <entry file="file://$PROJECT_DIR$/web/catering_positions.xhtml" />
@@ -446,13 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/UserRole.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -467,24 +460,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/registration.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/CateringUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -495,7 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab5/BooksJPA/client/src/main/webapp/index.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -503,37 +481,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/LoginBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+        <state relative-caret-position="330">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#751#752#0" expanded="true" />
             <element signature="e#786#787#0" expanded="true" />
+            <element signature="method#CheckAuthorization#0;class#LoginBean#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/catering_products.xhtml">
+    <entry file="file://$PROJECT_DIR$/web/registration.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="723">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab5/BooksJPA/client/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab5/BooksJPA/client/src/main/webapp/WEB-INF/faces-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab5/BooksJPA/client/src/main/java/BookBeen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab5/BooksJPA/client/src/main/java/LibraryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab5/BooksJPA/client/src/main/webapp/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../SemestrVI/OneDrive/SOA/Labki/lab5/BooksJPA/client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/catering_currentOrder.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="355">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/catering_products.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="40" column="28" selection-start-line="38" selection-start-column="16" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/ProductsBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="309">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
           <folding>
+            <element signature="method#ProductsBean#0;class#ProductsBean#0" />
+            <element signature="method#AddSelectedPositionToOrder#0;class#ProductsBean#0" />
+            <element signature="method#SumOrderPrice#0;class#ProductsBean#0" />
+            <element signature="method#UpdateCyclicDates#0;class#ProductsBean#0" />
+            <element signature="method#RemoveDateFromCyclicOrder#0;class#ProductsBean#0" />
             <element signature="e#2483#2484#0" expanded="true" />
             <element signature="e#2539#2540#0" expanded="true" />
           </folding>
@@ -624,7 +671,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.20325203" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
