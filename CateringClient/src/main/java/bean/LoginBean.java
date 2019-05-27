@@ -33,34 +33,28 @@ public class LoginBean implements Serializable {
         userRole="customer";
     }
 
-    public String CheckAuthorization(boolean enableRequiredRole, UserRole requiredRole){
+    public String CheckAuthorization(boolean enableRequiredRole, String requiredRole){
         if(loggedUser != null)
         {
-            if(enableRequiredRole && requiredRole != null)
+            if(enableRequiredRole)
             {
                 //Check if role allowed redirect
-                switch (requiredRole)
+                switch (UserRole.valueOf(requiredRole))
                 {
                     case CUSTOMER:
-                        if(loggedUser.getUserRole().equals("CUSTOMER"))
                             return null;
-                            break;
                     case ADMIN:
-                        if(loggedUser.getUserRole().equals("ADMIN"))
+                        if(loggedUser.getUserRole() == UserRole.ADMIN || loggedUser.getUserRole() == UserRole.MANAGER || loggedUser.getUserRole() == UserRole.SUPPLIER || loggedUser.getUserRole() == UserRole.WORKER)
                             return null;
-                        break;
                     case WORKER:
-                        if(loggedUser.getUserRole().equals("WORKER"))
+                        if(loggedUser.getUserRole() == UserRole.WORKER)
                             return null;
-                        break;
                     case MANAGER:
-                        if(loggedUser.getUserRole().equals("MANAGER"))
+                        if(loggedUser.getUserRole() == UserRole.MANAGER || loggedUser.getUserRole() == UserRole.SUPPLIER || loggedUser.getUserRole() == UserRole.WORKER)
                             return null;
-                        break;
                     case SUPPLIER:
-                        if(loggedUser.getUserRole().equals("SUPPLIER"))
+                        if(loggedUser.getUserRole() == UserRole.SUPPLIER)
                             return null;
-                        break;
                 }
                 //If not success redirect to main page
                 return "/catering_products.xhtml?faces-redirect=true";
@@ -73,6 +67,13 @@ public class LoginBean implements Serializable {
             //If not loged redirect to login page
             return "/login.xhtml?faces-redirect=true";
         }
+    }
+
+    public boolean CheckRoleAuthority(String requiredRole){
+        if(CheckAuthorization(true,requiredRole) == null)
+            return true;
+        else
+            return false;
     }
 
 

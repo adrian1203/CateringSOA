@@ -13,7 +13,7 @@
 <h:head>
     <title>Katering - Produkty</title>
     <f:metadata>
-        <f:viewAction action="#{LoginBean.CheckAuthorization(false,null)}" />
+        <f:viewAction action="#{LoginBean.CheckAuthorization(true,'CUSTOMER')}" />
     </f:metadata>
 </h:head>
 
@@ -75,7 +75,7 @@
     </h:form>
 
 
-    <h:form>
+    <h:form rendered="#{LoginBean.CheckRoleAuthority('WORKER')}">
         <h:commandButton value="Dodaj kategorię" action="#{ProductsBean.RedirectToPage('add_category')}"/>
         <h:commandButton value="Dodaj pozycję" action="#{ProductsBean.RedirectToPage('add_position')}"/>
     </h:form>

@@ -93,7 +93,6 @@ public class ProductsBean implements Serializable {
         return "/"+pageName+".xhtml?faces-redirect=true";
     }
 
-
     ///GETTERS AND SETTERS
 
 
