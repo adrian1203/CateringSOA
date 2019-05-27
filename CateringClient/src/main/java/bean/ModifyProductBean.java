@@ -53,8 +53,8 @@ public class ModifyProductBean implements Serializable {
         return posDesc;
     }
 
-    public void setPosDesc(String posDescr) {
-        this.posDesc = posDescr;
+    public void setPosDesc(String posDesc) {
+        this.posDesc = posDesc;
     }
 
     public Float getPosPrice() {

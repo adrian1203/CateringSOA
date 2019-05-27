@@ -20,30 +20,27 @@
 <h:body>
     <h2>Przeglądaj pozycje</h2>
 
-    <h:form>
+    <h:form id="form">
 
         <h:panelGrid columns="2">
 
             <h:outputText value="Wybierz kategorię"/>
-            <h:selectOneMenu value="#{ProductsBean.selectedCategory}">
-                <f:selectItem itemLabel="None" itemValue="-1L"/>
-                <c:forEach var="ct" items="#{ProductsBean.productEJBInterface.allCategory}" >
+            <h:selectOneListbox value="#{ProductsBean.selectedCategory}">
+                <c:forEach var="ct" items="#{ProductsBean.productEJBInterface.getAllCategory()}" >
                     <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.id}"/>
                 </c:forEach>
-                <f:ajax event="click" execute="@this" render="@form"/>
-            </h:selectOneMenu>
+                <f:ajax event="change" listener="#{ProductsBean.FilterPositions()}" execute="@this" render="@form"/>
+            </h:selectOneListbox>
 
             <h:outputText value="Wybierz danie"/>
-            <h:selectOneMenu value="#{ProductsBean.selectedPosition}">
-                <f:selectItem itemLabel="None" itemValue="-1L"/>
-                <c:forEach var="ps" items="#{ProductsBean.GetFilteredPositions()}" >
+            <h:selectOneListbox value="#{ProductsBean.selectedPosition}">
+                <c:forEach var="ps" items="#{ProductsBean.selectedPositionsView}" >
                     <f:selectItem itemLabel="#{ps.name}" itemValue="#{ps.id}"/>
                 </c:forEach>
-                <f:ajax event="click" execute="@this" render="@form"/>
-            </h:selectOneMenu>
+                <f:ajax event="change" execute="@this" render="@form"/>
+            </h:selectOneListbox>
 
         </h:panelGrid>
-
 
         <h:commandButton value="Dodaj pozycję" action="#{ProductsBean.AddSelectedPositionToOrder()}">
             <f:ajax event="click" execute="@this" render="@form"/>
@@ -52,6 +49,7 @@
         <br/>
         <br/>
 
+        <h4>Dodane do koszyka</h4>
         <h:dataTable id="SelectedBuy" value="#{ProductsBean.positionsOrder}" var="ps" border="1" cellpadding="6px">
             <h:column>
                 <f:facet name="header">Nazwa</f:facet>
@@ -69,14 +67,17 @@
             </h:column>
         </h:dataTable>
 
-        <h:commandButton value="Przejdź do podsumowania" action="/catering_currentOrder?faces-redirect=true"/>
+        <h:commandButton value="Przejdź do podsumowania" action="/catering_currentOrder.xhtml?faces-redirect=true"/>
 
         <br/>
         <br/>
 
-        <h:commandButton value="Dodaj kategorię" action="/add_category?faces-redirect=true"/>
-        <h:commandButton value="Dodaj pozycję" action="/add_position?faces-redirect=true"/>
+    </h:form>
 
+
+    <h:form>
+        <h:commandButton value="Dodaj kategorię" action="#{ProductsBean.RedirectToPage('add_category')}"/>
+        <h:commandButton value="Dodaj pozycję" action="#{ProductsBean.RedirectToPage('add_position')}"/>
     </h:form>
 
 </h:body>

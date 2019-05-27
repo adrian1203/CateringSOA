@@ -18,7 +18,7 @@ public class PermanentOrderIEJB implements PermanentOrderIEJBnterface {
     PermanentOrderService permanentOrderService;
 
     public PermanentOrderIEJB() {
-        permanentOrderService = new PermanentOrderService();
+    permanentOrderService = new PermanentOrderService();
     }
 
     @Override

@@ -1,7 +1,6 @@
 package repository;
 
 import domain.Category;
-import domain.CateringUser;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

@@ -3,11 +3,14 @@ package bean;
 import domain.Category;
 import domain.Position;
 import ejb.ProductEJBInterface;
-import sun.invoke.util.Wrapper;
 
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.*;
 
@@ -24,6 +27,7 @@ public class ProductsBean implements Serializable {
     private String orderDetails;
     private Date orderDeliver;
     private List<Date> cyclicOrderDeliver;
+    private Set<Position> selectedPositionsView;
 
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/ProductEJB")
     private ProductEJBInterface productEJBInterface;
@@ -31,20 +35,23 @@ public class ProductsBean implements Serializable {
     public ProductsBean(){
         positionsOrder = new ArrayList<Position>();
         cyclicOrderDeliver = new ArrayList<Date>();
+        selectedPositionsView = new HashSet<Position>();
         cyclicOrder = false;
     }
 
-    public Set<Position> GetFilteredPositions(){
+    public void FilterPositions(){
         if(selectedCategory != null)
         {
             Category c = (Category)productEJBInterface.getCategoryById(selectedCategory);
             if(c == null)
-                return new HashSet<Position>();
+                selectedPositionsView.clear();
             else
-                return c.getPositionSet();
+            {
+                selectedPositionsView = c.getPositionSet();
+            }
         }
         else
-            return new HashSet<Position>();
+            selectedPositionsView.clear();
     }
 
 
@@ -68,10 +75,12 @@ public class ProductsBean implements Serializable {
         return sum;
     }
 
-    public void AddCyclicDates(){
+    public void AddCyclicDates() throws IOException {
         if(orderDeliver!=null)
         {
             cyclicOrderDeliver.add(orderDeliver);
+            ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+            ec.redirect(((HttpServletRequest) ec.getRequest()).getRequestURI());
         }
     }
 
@@ -80,6 +89,9 @@ public class ProductsBean implements Serializable {
             cyclicOrderDeliver.remove(dt);
     }
 
+    public String RedirectToPage(String pageName){
+        return "/"+pageName+".xhtml?faces-redirect=true";
+    }
 
 
     ///GETTERS AND SETTERS
@@ -147,5 +159,13 @@ public class ProductsBean implements Serializable {
 
     public void setCyclicOrderDeliver(List<Date> cyclicOrderDeliver) {
         this.cyclicOrderDeliver = cyclicOrderDeliver;
+    }
+
+    public Set<Position> getSelectedPositionsView() {
+        return selectedPositionsView;
+    }
+
+    public void setSelectedPositionsView(Set<Position> selectedPositionsView) {
+        this.selectedPositionsView = selectedPositionsView;
     }
 }
