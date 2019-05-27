@@ -10,6 +10,9 @@
 
 <h:head>
     <title>Katering - Dodanie pozycji</title>
+    <f:metadata>
+        <f:viewAction action="#{LoginBean.CheckAuthorization(true,'WORKER')}" />
+    </f:metadata>
 </h:head>
 
 <h:body>
@@ -41,6 +44,10 @@
 
         </h:panelGrid>
 
+    </h:form>
+
+    <h:form>
+        <h:commandButton value="Wyloguj" action="#{LoginBean.Logout()}"/>
     </h:form>
 
 </h:body>

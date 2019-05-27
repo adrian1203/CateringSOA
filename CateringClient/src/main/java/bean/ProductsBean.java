@@ -28,6 +28,8 @@ public class ProductsBean implements Serializable {
     private Date orderDeliver;
     private List<Date> cyclicOrderDeliver;
     private Set<Position> selectedPositionsView;
+    private int deliverHour;
+    private int deliverMinute;
 
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/ProductEJB")
     private ProductEJBInterface productEJBInterface;
@@ -78,9 +80,12 @@ public class ProductsBean implements Serializable {
     public void AddCyclicDates() throws IOException {
         if(orderDeliver!=null)
         {
+            System.out.println("ELO: " + deliverHour + ", " + deliverMinute);
+            orderDeliver.setHours(deliverHour);
+            orderDeliver.setMinutes(deliverMinute);
             cyclicOrderDeliver.add(orderDeliver);
-            ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
-            ec.redirect(((HttpServletRequest) ec.getRequest()).getRequestURI());
+            //ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+            //ec.redirect(((HttpServletRequest) ec.getRequest()).getRequestURI());
         }
     }
 
@@ -166,5 +171,21 @@ public class ProductsBean implements Serializable {
 
     public void setSelectedPositionsView(Set<Position> selectedPositionsView) {
         this.selectedPositionsView = selectedPositionsView;
+    }
+
+    public int getDeliverHour() {
+        return deliverHour;
+    }
+
+    public void setDeliverHour(int deliverHour) {
+        this.deliverHour = deliverHour;
+    }
+
+    public int getDeliverMinute() {
+        return deliverMinute;
+    }
+
+    public void setDeliverMinute(int deliverMinute) {
+        this.deliverMinute = deliverMinute;
     }
 }

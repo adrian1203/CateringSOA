@@ -12,6 +12,9 @@
 
 <h:head>
     <title>Katering - dodawanie kategorii</title>
+    <f:metadata>
+        <f:viewAction action="#{LoginBean.CheckAuthorization(true,'WORKER')}" />
+    </f:metadata>
 </h:head>
 
 <h:body>
@@ -32,6 +35,10 @@
 
         <h:commandButton value="Dodaj" action="#{ModifyProductBean.AddNewCategory()}"/>
 
+    </h:form>
+
+    <h:form>
+        <h:commandButton value="Wyloguj" action="#{LoginBean.Logout()}"/>
     </h:form>
 
 </h:body>

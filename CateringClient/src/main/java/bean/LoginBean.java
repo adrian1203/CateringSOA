@@ -44,16 +44,16 @@ public class LoginBean implements Serializable {
                     case CUSTOMER:
                             return null;
                     case ADMIN:
-                        if(loggedUser.getUserRole() == UserRole.ADMIN || loggedUser.getUserRole() == UserRole.MANAGER || loggedUser.getUserRole() == UserRole.SUPPLIER || loggedUser.getUserRole() == UserRole.WORKER)
+                        if(loggedUser.getUserRole() == UserRole.ADMIN)
                             return null;
                     case WORKER:
-                        if(loggedUser.getUserRole() == UserRole.WORKER)
+                        if(loggedUser.getUserRole() == UserRole.WORKER || loggedUser.getUserRole() == UserRole.ADMIN || loggedUser.getUserRole() == UserRole.MANAGER)
                             return null;
                     case MANAGER:
-                        if(loggedUser.getUserRole() == UserRole.MANAGER || loggedUser.getUserRole() == UserRole.SUPPLIER || loggedUser.getUserRole() == UserRole.WORKER)
+                        if(loggedUser.getUserRole() == UserRole.MANAGER || loggedUser.getUserRole() == UserRole.ADMIN)
                             return null;
                     case SUPPLIER:
-                        if(loggedUser.getUserRole() == UserRole.SUPPLIER)
+                        if(loggedUser.getUserRole() == UserRole.SUPPLIER || loggedUser.getUserRole() == UserRole.ADMIN || loggedUser.getUserRole() == UserRole.MANAGER)
                             return null;
                 }
                 //If not success redirect to main page
@@ -88,6 +88,13 @@ public class LoginBean implements Serializable {
         userEJBInterface.register(login,password,firstName,lastName,email,city,street,flatNumber,userRole);
         return "/login.xhtml?faces-redirect=true";
     }
+
+    public String Logout(){
+        userEJBInterface.logOut();
+        loggedUser=null;
+        return "/login.xhtml?faces-redirect=true";
+    }
+
 
 
     public String getLogin() {

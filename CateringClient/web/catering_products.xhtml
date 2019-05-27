@@ -26,6 +26,7 @@
 
             <h:outputText value="Wybierz kategorię"/>
             <h:selectOneListbox value="#{ProductsBean.selectedCategory}">
+                <f:selectItem itemLabel="" itemValue="null"/>
                 <c:forEach var="ct" items="#{ProductsBean.productEJBInterface.getAllCategory()}" >
                     <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.id}"/>
                 </c:forEach>
@@ -34,6 +35,7 @@
 
             <h:outputText value="Wybierz danie"/>
             <h:selectOneListbox value="#{ProductsBean.selectedPosition}">
+                <f:selectItem itemLabel="" itemValue="null"/>
                 <c:forEach var="ps" items="#{ProductsBean.selectedPositionsView}" >
                     <f:selectItem itemLabel="#{ps.name}" itemValue="#{ps.id}"/>
                 </c:forEach>
@@ -78,6 +80,10 @@
     <h:form rendered="#{LoginBean.CheckRoleAuthority('WORKER')}">
         <h:commandButton value="Dodaj kategorię" action="#{ProductsBean.RedirectToPage('add_category')}"/>
         <h:commandButton value="Dodaj pozycję" action="#{ProductsBean.RedirectToPage('add_position')}"/>
+    </h:form>
+
+    <h:form>
+        <h:commandButton value="Wyloguj" action="#{LoginBean.Logout()}"/>
     </h:form>
 
 </h:body>

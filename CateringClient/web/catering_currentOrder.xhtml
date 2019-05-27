@@ -52,11 +52,23 @@
                 <p:ajax event="dateSelect" execute="@this" render="@form"/>
             </p:calendar>
 
-            <h:outputText value="Dodaj datę dostarczenia" rendered="#{ProductsBean.cyclicOrder eq true}"/>
-            <p:calendar id="dateCyclicDeliver" value="#{ProductsBean.orderDeliver}" mode="popup" rendered="#{ProductsBean.cyclicOrder eq true}">
-                <p:ajax event="dateSelect" listener="#{ProductsBean.AddCyclicDates()}" execute="@this" render="@form"/>
-            </p:calendar>
+            <h:outputText value="Godzina dostarczenia" rendered="#{ProductsBean.cyclicOrder eq true}"/>
+            <h:outputText value="Minuta dostarczenia" rendered="#{ProductsBean.cyclicOrder eq true}"/>
 
+            <h:panelGrid columns="1" style="margin-bottom: 5px" rendered="#{ProductsBean.cyclicOrder eq true}">
+                <p:inputText id="deliverHour" value="#{ProductsBean.deliverHour}" rendered="#{ProductsBean.cyclicOrder eq true}" />
+                <p:slider for="deliverHour" minValue="0" maxValue="24" step="1" />
+            </h:panelGrid>
+            <h:panelGrid columns="1" style="margin-bottom: 5px" rendered="#{ProductsBean.cyclicOrder eq true}">
+                <p:inputText id="deliverMinute" value="#{ProductsBean.deliverMinute}" rendered="#{ProductsBean.cyclicOrder eq true}" />
+                <p:slider for="deliverMinute" minValue="0" maxValue="60" step="1" />
+            </h:panelGrid>
+
+            <h:outputText value="Dodaj datę dostarczenia" rendered="#{ProductsBean.cyclicOrder eq true}"/>
+            <p:calendar id="dateCyclicDeliver" value="#{ProductsBean.orderDeliver}" mode="popup" rendered="#{ProductsBean.cyclicOrder eq true}"/>
+
+            <h:commandButton value="Dodaj datę" action="#{ProductsBean.AddCyclicDates()}"/>
+            <h:outputText value=""/>
 
             <h:outputLabel rendered="#{ProductsBean.cyclicOrder eq true}">Daty zamówień</h:outputLabel>
             <h:dataTable id="cyclicDates" value="#{ProductsBean.cyclicOrderDeliver}" var="dt" border="1" cellpadding="6px" rendered="#{ProductsBean.cyclicOrder eq true}">
@@ -79,6 +91,11 @@
         <h:commandButton value="Zamów" action="/catering_currentOrder.xhtml?faces-redirect=true"/>
         <h:commandButton value="Wróć" action="/catering_products.xhtml?faces-redirect=true"/>
 
+    </h:form>
+
+    <br/>
+    <h:form>
+        <h:commandButton value="Wyloguj" action="#{LoginBean.Logout()}"/>
     </h:form>
 
 </h:head>
