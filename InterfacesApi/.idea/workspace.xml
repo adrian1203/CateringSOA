@@ -8,22 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d81fbaeb-83f4-4099-bfa5-d3ad590f5d40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../CateringApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/CateringApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/CateringApi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/ProductEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/bean/ProductEJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/PermanentOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/repository/PermanentOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/service/CateringUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/service/CateringUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/java/service/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/java/service/PositionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringApi/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringApi/target/CateringApi-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringClient/target/classes/bean/ExampleBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringClient/target/classes/bean/LoginBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringClient/target/classes/bean/ModifyProductBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringClient/target/classes/bean/ProductsBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ProductsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ProductsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/target/classes/bean/ProductsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/target/classes/bean/ProductsBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/InterfacesApi/InterfacesApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/InterfacesApi/InterfacesApi.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ejb/ProductEJBInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ejb/ProductEJBInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ejb/ProductEJBInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejb/ProductEJBInterface.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ejb/OrderEJBInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="204">
               <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -159,6 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,7 +214,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -274,17 +265,18 @@
       <workItem from="1558556950247" duration="46000" />
       <workItem from="1558646873637" duration="46000" />
       <workItem from="1558717968693" duration="2147000" />
+      <workItem from="1558940106466" duration="594000" />
+      <workItem from="1558944119103" duration="109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17431000" />
+    <option name="totallyTimeSpent" value="18134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32223904" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33282906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -343,13 +335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ejb/UserEJBInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ejb/ProductEJBInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -359,11 +344,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ejb/OrderEJBInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="204">
           <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ejb/UserEJBInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>

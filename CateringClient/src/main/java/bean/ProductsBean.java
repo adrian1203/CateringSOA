@@ -3,7 +3,6 @@ package bean;
 import domain.Category;
 import domain.Position;
 import ejb.ProductEJBInterface;
-import sun.invoke.util.Wrapper;
 
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
