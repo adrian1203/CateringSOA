@@ -19,11 +19,25 @@
 
 <h:body>
 
-    <h2>Dodaj kategorię</h2>
+    <h2>Dodaj lub modyfikuj kategorię</h2>
 
     <h:form>
 
         <h:panelGrid columns="2">
+
+            <h:outputText value="Modyfikuj "/>
+            <h:selectBooleanCheckbox value="#{ModifyProductBean.modifyCategory}">
+                <f:ajax event="click" execute="@this" render="@form"/>
+            </h:selectBooleanCheckbox>
+
+            <h:outputText value="Kategorie " rendered="#{ModifyProductBean.modifyCategory}"/>
+            <h:selectOneListbox value="#{ModifyProductBean.selectedCategory}" rendered="#{ModifyProductBean.modifyCategory}">
+                <f:selectItem itemLabel="" itemValue="-1L"/>
+                <c:forEach var="ct" items="#{ModifyProductBean.productEJBInterface.getAllCategory()}" >
+                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.id}"/>
+                </c:forEach>
+                <f:ajax event="change" listener="#{ModifyProductBean.UpdateCategoryModifyInput()}" execute="@this" render="@form"/>
+            </h:selectOneListbox>
 
             <h:outputText value="Nazwa "/>
             <h:inputText value="#{ModifyProductBean.catName}"/>
@@ -33,7 +47,7 @@
 
         </h:panelGrid>
 
-        <h:commandButton value="Dodaj" action="#{ModifyProductBean.AddNewCategory()}"/>
+        <h:commandButton value="Zatwierdź" action="#{ModifyProductBean.ProcessCategoryApply()}"/>
 
     </h:form>
 

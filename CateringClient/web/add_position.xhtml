@@ -17,11 +17,25 @@
 
 <h:body>
 
-    <h2>Dodanie pozycji</h2>
+    <h2>Dodaj lub modyfikuj pozycję</h2>
 
     <h:form>
 
         <h:panelGrid columns="2">
+
+            <h:outputText value="Modyfikuj "/>
+            <h:selectBooleanCheckbox value="#{ModifyProductBean.modifyPosition}">
+                <f:ajax event="click" execute="@this" render="@form"/>
+            </h:selectBooleanCheckbox>
+
+            <h:outputText value="Pozycje " rendered="#{ModifyProductBean.modifyPosition}"/>
+            <h:selectOneListbox value="#{ModifyProductBean.selectedPosition}" rendered="#{ModifyProductBean.modifyPosition}">
+                <f:selectItem itemLabel="" itemValue="-1L"/>
+                <c:forEach var="ct" items="#{ModifyProductBean.productEJBInterface.getAllPosition()}" >
+                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.id}"/>
+                </c:forEach>
+                <f:ajax event="change" listener="#{ModifyProductBean.UpdatePositionModifyInput()}" execute="@this" render="@form"/>
+            </h:selectOneListbox>
 
             <h:outputText value="Nazwa "/>
             <h:inputText value="#{ModifyProductBean.posName}"/>
@@ -40,7 +54,7 @@
                 </c:forEach>
             </h:selectOneMenu>
 
-            <h:commandButton value="Dodaj" action="#{ModifyProductBean.AddNewPosition()}"/>
+            <h:commandButton value="Zatwierdź" action="#{ModifyProductBean.ProcessPositionApply()}"/>
 
         </h:panelGrid>
 
