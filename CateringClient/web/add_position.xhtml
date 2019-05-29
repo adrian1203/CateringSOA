@@ -55,12 +55,15 @@
             </h:selectOneMenu>
 
             <h:commandButton value="Zatwierdź" action="#{ModifyProductBean.ProcessPositionApply()}"/>
+            <h:commandButton value="Usuń kategorię" action="#{ModifyProductBean.DeletePosition()}" rendered="#{ModifyProductBean.modifyPosition}"/>
 
         </h:panelGrid>
 
     </h:form>
 
+    <br/>
     <h:form>
+        <h:commandButton value="Wróć" action="#{ProductsBean.RedirectToPage('catering_products')}"/>
         <h:commandButton value="Wyloguj" action="#{LoginBean.Logout()}"/>
     </h:form>
 

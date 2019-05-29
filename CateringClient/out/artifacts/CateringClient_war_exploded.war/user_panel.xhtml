@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+    <title>Catering - user panel</title>
+    <f:metadata>
+        <f:viewAction action="#{LoginBean.CheckAuthorization(true,'CUSTOMER')}" />
+    </f:metadata>
+</h:head>
+
+<h:body>
+
+    <h2>Panel użytkownika</h2>
+
+    <h:form>
+
+        <h:panelGrid columns="2">
+
+            <h:outputText value="Zmiana hasła"/>
+            <h:inputText value="#{UserPanelBean.changePassword}"/>
+
+        </h:panelGrid>
+
+        <h:commandButton value="Zmień" action="#{UserPanelBean.ChangePassword()}"/>
+
+    </h:form>
+
+    <h:form rendered="#{LoginBean.CheckRoleAuthority('ADMIN')}">
+
+        <h:panelGrid columns="2">
+
+            <h:outputText value="Wybierz użytkownika "/>
+            <h:selectOneListbox value="#{UserPanelBean.changePasswordUser}">
+                <f:selectItem itemLabel="" itemValue="-1L"/>
+                <c:forEach var="us" items="#{UserPanelBean.GetUsersByAdmin()}">
+                    <f:selectItem itemLabel="#{us.login}" itemValue="#{us.id}"/>
+                </c:forEach>
+            </h:selectOneListbox>
+
+            <h:outputText value="Nowe hasło"/>
+            <h:inputText value="#{UserPanelBean.changeSelectedPassword}"/>
+
+        </h:panelGrid>
+
+        <h:commandButton value="Zmień" action="#{UserPanelBean.ChangePasswordByAdmin()}"/>
+
+    </h:form>
+
+    <br/>
+    <h:form>
+        <h:commandButton value="Wróć" action="#{ProductsBean.RedirectToPage('catering_products')}"/>
+        <h:commandButton value="Wyloguj" action="#{LoginBean.Logout()}"/>
+    </h:form>
+
+</h:body>
+
+</html>

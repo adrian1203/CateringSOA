@@ -108,6 +108,17 @@ public class ModifyProductBean implements Serializable {
         }
     }
 
+    public String DeleteCategory(){
+        if(selectedCategory != null  && selectedCategory != -1L)
+            productEJBInterface.deleteCategory(selectedCategory);
+        return null;
+    }
+
+    public String DeletePosition(){
+        if(selectedPosition != null && selectedPosition != -1L)
+            productEJBInterface.deletePosition(selectedPosition);
+        return null;
+    }
 
     public String getPosName() {
         return posName;

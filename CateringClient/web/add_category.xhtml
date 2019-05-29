@@ -48,10 +48,14 @@
         </h:panelGrid>
 
         <h:commandButton value="Zatwierdź" action="#{ModifyProductBean.ProcessCategoryApply()}"/>
+        <h:commandButton value="Usuń pozycję" action="#{ModifyProductBean.DeleteCategory()}" rendered="#{ModifyProductBean.modifyCategory}"/>
 
     </h:form>
 
+
+    <br/>
     <h:form>
+        <h:commandButton value="Wróć" action="#{ProductsBean.RedirectToPage('catering_products')}"/>
         <h:commandButton value="Wyloguj" action="#{LoginBean.Logout()}"/>
     </h:form>
 
