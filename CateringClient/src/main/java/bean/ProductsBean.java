@@ -44,12 +44,17 @@ public class ProductsBean implements Serializable {
     public void FilterPositions(){
         if(selectedCategory != null)
         {
+            System.out.println("Wchodzę t kurwa");
             Category c = (Category)productEJBInterface.getCategoryById(selectedCategory);
             if(c == null)
                 selectedPositionsView.clear();
             else
             {
+                System.out.println("Wchodzę t kurwa do elssaaaaaa");
+                System.out.println(c.getName() +"  kurwa   "+ c.getId());
                 selectedPositionsView = c.getPositionSet();
+                System.out.println(selectedPositionsView.size());
+
             }
         }
         else

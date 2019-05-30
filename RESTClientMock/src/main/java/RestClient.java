@@ -39,7 +39,6 @@ public class RestClient {
     }
 
     public String getResponse(String url, String language) throws IOException, HttpException, URISyntaxException{
-        ObjectMapper mapper = new ObjectMapper();
         HttpClient client = new DefaultHttpClient();
         HttpGet request = new HttpGet(url);
         request.setHeader("Content-Language",language);

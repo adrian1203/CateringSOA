@@ -3,6 +3,7 @@ package endpoint;
 
 import domain.Category;
 import service.CategoryService;
+import service.PositionService;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -39,10 +40,22 @@ public class ProductController {
         return this.categoryService.getCategoryById(id);
     }
 
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("dupa")
+    public Category getCategoryById() {
+        positionService.getTopPosition();
+        return null;
+    }
+
     private CategoryService categoryService;
+    private PositionService positionService;
 
     public ProductController() {
+
         categoryService = new CategoryService();
+        positionService = new PositionService();
     }
 
 
