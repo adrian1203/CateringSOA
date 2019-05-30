@@ -3,15 +3,18 @@ package service;
 import domain.Category;
 import repository.CategoryRepository;
 
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
 import java.util.List;
 
+@Stateless
 public class CategoryService {
 
-
+    @EJB
     private CategoryRepository categoryRepository;
 
     public CategoryService() {
-        categoryRepository = new CategoryRepository();
+        //categoryRepository = new CategoryRepository();
     }
 
     public List<Category> getAllCategory() {

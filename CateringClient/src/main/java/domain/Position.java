@@ -20,6 +20,7 @@ public class Position implements Serializable {
     private String description;
     private Float price;
     private Set<Order> orderSet = new HashSet<Order>();
+    private Boolean toApproved;
     private Category category;
 
 }

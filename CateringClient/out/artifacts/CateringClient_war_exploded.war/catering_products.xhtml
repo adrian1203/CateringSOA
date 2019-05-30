@@ -27,7 +27,7 @@
             <h:outputText value="Wybierz kategorię"/>
             <h:selectOneListbox value="#{ProductsBean.selectedCategory}">
                 <f:selectItem itemLabel="" itemValue="null"/>
-                <c:forEach var="ct" items="#{ProductsBean.productEJBInterface.getAllCategory()}" >
+                <c:forEach var="ct" items="#{ProductsBean.GetAllCategories()}" >
                     <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.id}"/>
                 </c:forEach>
                 <f:ajax event="change" listener="#{ProductsBean.FilterPositions()}" execute="@this" render="@form"/>

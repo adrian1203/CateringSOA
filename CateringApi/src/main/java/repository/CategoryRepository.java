@@ -2,12 +2,15 @@ package repository;
 
 import domain.Category;
 
+import javax.ejb.Singleton;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 import java.util.List;
 
+@Singleton
 public class CategoryRepository {
 
     private EntityManagerFactory factory;
@@ -44,5 +47,12 @@ public class CategoryRepository {
         em.getTransaction().begin();
         em.remove(category);
         em.getTransaction().commit();
+    }
+
+    public void ReInitFactory(){
+        factory = null;
+        em=null;
+        factory = Persistence.createEntityManagerFactory("CateringJPA");
+        em = factory.createEntityManager();
     }
 }

@@ -1,15 +1,12 @@
 package bean;
 
+
 import domain.Category;
 import domain.Position;
 import ejb.ProductEJBInterface;
-
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import javax.faces.context.ExternalContext;
-import javax.faces.context.FacesContext;
-import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.*;
@@ -40,6 +37,11 @@ public class ProductsBean implements Serializable {
         selectedPositionsView = new HashSet<Position>();
         cyclicOrder = false;
     }
+
+    public List<Object> GetAllCategories() {
+        return productEJBInterface.getAllCategory();
+    }
+
 
     public void FilterPositions(){
         if(selectedCategory != null)
