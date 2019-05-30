@@ -29,7 +29,7 @@ public class Category implements Serializable {
     @Column
     private String description;
 
-    @JsonIgnoreProperties({"category"})
+    @JsonIgnoreProperties({"category", "orderSet", "permamentOrderSet"})
     @OneToMany(
             fetch = FetchType.EAGER,
             mappedBy = "category",

@@ -57,4 +57,8 @@ public class PermanentOrderIEJB implements PermanentOrderIEJBnterface {
         return new ArrayList<Object>(Arrays.asList(permanentOrderService.getFilteredOrderForUser(userId, start, end).toArray()));
 
     }
+    public List<Object> getOrderForUser(Long userId) {
+        return new ArrayList<Object>(Arrays.asList(permanentOrderService.getOrderForUser(userId).toArray()));
+
+    }
 }

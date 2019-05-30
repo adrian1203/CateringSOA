@@ -60,4 +60,9 @@ public class OrderEJB implements OrderEJBInterface {
     public List<Object> getFilteredOrderForUser(Long userId, Date start, Date end) {
         return new ArrayList<Object>(Arrays.asList(orderService.getFilteredOrderForUser(userId, start, end).toArray()));
     }
+
+    public List<Object> getOrdereForUser(Long userId){
+        return new ArrayList<Object>(Arrays.asList(orderService.getAllOrderForUser(userId).toArray()));
+
+    }
 }

@@ -67,7 +67,7 @@ public class PositionService {
 
 
     public List<Position> getPossitionToApproved(){
-        return positionRepository.findAllPosition().stream().filter(e-> e.getToApproved()==true).collect(Collectors.toList());
+        return positionRepository.findAllPosition().stream().filter(e-> e.getToApproved().equals(true)).collect(Collectors.toList());
 
     }
     public void approvePossition(Long id){

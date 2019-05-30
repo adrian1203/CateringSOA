@@ -43,7 +43,7 @@ public class PermanentOrderService {
         order.setAdditionalInformation(additionalInformation);
         order.setCateringUser(cateringUserRepository.findUserById(userID));
         order.setDeliverDateSet(permanetOrderDateList);
-        order.setPositionSet(positionList);
+        order.setPermamentPositionSet(positionList);
         permanentOrderRepository.createPermanentOrder(order);
     }
     public void updateStatusPermementOrder(Date deliveryDate, Long orderId){
@@ -53,7 +53,13 @@ public class PermanentOrderService {
     public List<PermanentOrder> getFilteredOrderForUser(Long userId, Date start, Date end ){
         return permanentOrderRepository.findAllPermanentOrder().stream()
                 .filter(o-> o.getOrderDate().after(start) && o.getOrderDate().before(end))
+                .filter(o->o.getCateringUser().getId().equals(userId))
                 .collect(Collectors.toList());
+
+    }
+
+    public List<PermanentOrder> getOrderForUser(Long userId){
+        return permanentOrderRepository.findAllPermanentOrder().stream().filter(o->o.getCateringUser().getId().equals(userId)).collect(Collectors.toList());
 
     }
 }

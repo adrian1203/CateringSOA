@@ -18,6 +18,7 @@ public interface ProductEJBInterface {
     public Object getPositionById(Long id);
     public List<Object> getPossitionToApproved();
     public void approvePossition(Long id);
+    public void setDayPossition(Long id);
 
 
 

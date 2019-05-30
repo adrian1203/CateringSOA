@@ -1,5 +1,6 @@
 package domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -32,11 +33,12 @@ public class Order implements Serializable {
     private String additionalInformation;
 
     @Enumerated(EnumType.STRING)
-    private OrderStatus orderStatus;
+    private OrderStatus orderStatus=OrderStatus.ORDERED;
 
+    @JsonIgnoreProperties({"orderSet", "permamentOrderSet"})
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(
-            name = "pasitionOrder",
+            name = "positionOrder",
             joinColumns = { @JoinColumn(name = "position_id") },
             inverseJoinColumns = { @JoinColumn(name = "order_id")}
     )

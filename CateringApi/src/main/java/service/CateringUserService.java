@@ -80,5 +80,30 @@ public class CateringUserService {
       return  cateringUserRepository.findAllUser().stream().anyMatch(elem -> elem.getPassword().equals(password) || elem.getLogin().equals(login) );
     }
 
+    Boolean checkIfExistPassword(String password){
+        return  cateringUserRepository.findAllUser().stream().anyMatch(elem -> elem.getPassword().equals(password));
+
+    }
+
+    public List<CateringUser> getAllCateringUsers(){
+
+        return cateringUserRepository.findAllUser();
+    }
+
+    public Boolean changePassword(String password, Long userId){
+        if(checkIfExistPassword(hashPassword(password))){
+            return false;
+        }
+        CateringUser cateringUser = cateringUserRepository.findUserById(userId);
+        cateringUser.setPassword(hashPassword(password));
+        cateringUserRepository.updateUser(cateringUser);
+        return true;
+
+    }
+    public CateringUser findUserById(Long userId){
+       return  cateringUserRepository.findUserById(userId);
+    }
+
+
 
 }

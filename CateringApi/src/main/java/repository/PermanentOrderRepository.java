@@ -30,7 +30,7 @@ public class PermanentOrderRepository {
 
     public void createPermanentOrder(PermanentOrder permanentOrder) {
         em.getTransaction().begin();
-        em.persist(permanentOrder);
+        em.merge(permanentOrder);
         em.getTransaction().commit();
     }
 

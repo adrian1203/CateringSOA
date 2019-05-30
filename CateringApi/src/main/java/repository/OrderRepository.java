@@ -31,7 +31,7 @@ public class OrderRepository {
 
     public void createOrder(Order order) {
         em.getTransaction().begin();
-        em.persist(order);
+        em.merge(order);
         em.getTransaction().commit();
     }
 

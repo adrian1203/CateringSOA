@@ -51,12 +51,12 @@ public class UserEJB implements UserEJBInterface {
         return cateringUserService.createUser(login, password, firstName, lastName, email, city, street, flatNumber, userRole);
     }
 
-    public Boolean changePassword(String s, String s1) {
-        return null;
+    public Boolean changePassword(String password) {
+       return cateringUserService.changePassword(password, logedUser.getId());
     }
 
-    public Boolean changePasswordByAdmin(String s, Long aLong) {
-        return null;
+    public Boolean changePasswordByAdmin(String password, Long userId) {
+        return cateringUserService.changePassword(password, userId);
     }
 
     public Object GetLoggedUser() {

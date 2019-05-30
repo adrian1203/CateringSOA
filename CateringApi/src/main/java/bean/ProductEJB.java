@@ -88,6 +88,11 @@ public class ProductEJB implements ProductEJBInterface {
     }
 
 
+    public void setDayPossition(Long possitionId) {
+        positionService.setDayPosition(possitionId);
+    }
+
+
     public ProductEJB() {
         //this.categoryService = new CategoryService();
         this.positionService = new PositionService();

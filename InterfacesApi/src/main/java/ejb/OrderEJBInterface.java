@@ -13,5 +13,7 @@ public interface OrderEJBInterface {
     public List<Object> getOrderByStatus(String status);
     public Object getOrderById(Long id);
     public List<Object> getFilteredOrderForUser(Long userId, Date start, Date end );
+    public List<Object> getOrdereForUser(Long userId);
+
 
 }

@@ -33,7 +33,7 @@ public class CateringUserRepository {
         em.getTransaction().commit();
     }
 
-    public void updateBook(CateringUser cateringUser) {
+    public void updateUser(CateringUser cateringUser) {
         em.getTransaction().begin();
         em.merge(cateringUser);
         em.getTransaction().commit();

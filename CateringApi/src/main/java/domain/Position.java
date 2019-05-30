@@ -1,5 +1,6 @@
 package domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -32,8 +33,14 @@ public class Position implements Serializable {
     @Column
     private Boolean dayPosition = false;
 
+
+    @JsonIgnoreProperties({"positionSet"})
     @ManyToMany(mappedBy = "positionSet")
     private Set<Order> orderSet = new HashSet<Order>();
+
+    @JsonIgnoreProperties({"positionSet"})
+    @ManyToMany(mappedBy = "permamentPositionSet")
+    private Set<PermanentOrder> permamentOrderSet = new HashSet<PermanentOrder>();
 
     @ManyToOne
     private Category category;

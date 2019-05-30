@@ -12,5 +12,6 @@ public interface PermanentOrderIEJBnterface {
     public void createOrder(String additionalInformation, Set<Object> positionList, Long userID, Set<Object> permanetOrderDateList);
     public void updateStatusPermementOrder(Date deliveryDate, Long orderId);
     public List<Object> getFilteredOrderForUser(Long userId, Date start, Date end );
+    public List<Object> getOrderForUser(Long userId);
 
 }

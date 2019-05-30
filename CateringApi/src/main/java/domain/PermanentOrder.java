@@ -1,5 +1,6 @@
 package domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -27,16 +28,17 @@ public class PermanentOrder implements Serializable {
     @Column
     private Date orderDate;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private Set<PermanetOrderDate> deliverDateSet = new HashSet<PermanetOrderDate>();
 
+    @JsonIgnoreProperties({"orderSet", "permamentOrderSet"})
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(
-            name = "pasitionOrder",
+            name = "pasitionOrderPermament",
             joinColumns = { @JoinColumn(name = "position_id") },
             inverseJoinColumns = { @JoinColumn(name = "permanent_order_id")}
     )
-    private Set<Position> positionSet = new HashSet<Position>();
+    private Set<Position> permamentPositionSet = new HashSet<Position>();
 
     @ManyToOne
     private CateringUser cateringUser;

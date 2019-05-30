@@ -50,7 +50,7 @@ public class OrderService {
     }
 
     public List<Order> getOrderByStatus(String status){
-        return orderRepository.findAllOrder().stream().filter(order -> order.getOrderStatus()==Enum.valueOf(OrderStatus.class, status)).collect(Collectors.toList());
+        return orderRepository.findAllOrder().stream().filter(order -> order.getOrderStatus().equals(Enum.valueOf(OrderStatus.class, status))).collect(Collectors.toList());
     }
     public Order getOrderById(Long id){
        return orderRepository.findOrderOrderById(id);
@@ -59,8 +59,14 @@ public class OrderService {
     public List<Order> getFilteredOrderForUser(Long userId, Date start, Date end ){
         return orderRepository.findAllOrder().stream()
                 .filter(o-> o.getOrderDate().after(start) && o.getOrderDate().before(end))
+                .filter(o->o.getCateringUser().getId().equals(userId))
                 .collect(Collectors.toList());
 
+    }
+
+    public List<Order> getAllOrderForUser(Long userId){
+        return orderRepository.findAllOrder().stream()
+                .filter(o->o.getCateringUser().getId().equals(userId)).collect(Collectors.toList());
     }
 
 
