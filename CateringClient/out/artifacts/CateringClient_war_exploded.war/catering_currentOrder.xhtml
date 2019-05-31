@@ -88,7 +88,7 @@
         <h:outputLabel value="Do zapłacenia: #{ProductsBean.SumOrderPrice()}"/>
         <br/>
 
-        <h:commandButton value="Zamów" action="/catering_currentOrder.xhtml?faces-redirect=true"/>
+        <h:commandButton value="Zamów" action="#{ProductsBean.MakeOrder(LoginBean.loggedUser.id)}"/>
         <h:commandButton value="Wróć" action="/catering_products.xhtml?faces-redirect=true"/>
 
     </h:form>

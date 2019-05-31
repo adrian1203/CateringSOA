@@ -2,7 +2,10 @@ package bean;
 
 
 import domain.Category;
+import domain.PermanetOrderDate;
 import domain.Position;
+import ejb.OrderEJBInterface;
+import ejb.PermanentOrderIEJBnterface;
 import ejb.ProductEJBInterface;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
@@ -30,6 +33,12 @@ public class ProductsBean implements Serializable {
 
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/ProductEJB")
     private ProductEJBInterface productEJBInterface;
+
+    @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/OrderEJB")
+    private OrderEJBInterface orderEJBInterface;
+
+    @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/PermanentOrderIEJB")
+    private PermanentOrderIEJBnterface permanentOrderIEJBnterface;
 
     public ProductsBean(){
         positionsOrder = new ArrayList<Position>();
@@ -63,7 +72,6 @@ public class ProductsBean implements Serializable {
             selectedPositionsView.clear();
     }
 
-
     public void AddSelectedPositionToOrder(){
         if(selectedPosition != null)
         {
@@ -91,8 +99,6 @@ public class ProductsBean implements Serializable {
             orderDeliver.setHours(deliverHour);
             orderDeliver.setMinutes(deliverMinute);
             cyclicOrderDeliver.add(orderDeliver);
-            //ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
-            //ec.redirect(((HttpServletRequest) ec.getRequest()).getRequestURI());
         }
     }
 
@@ -103,6 +109,29 @@ public class ProductsBean implements Serializable {
 
     public String RedirectToPage(String pageName){
         return "/"+pageName+".xhtml?faces-redirect=true";
+    }
+
+    public String MakeOrder(Long userID){
+        if(cyclicOrder)
+            return MakeCyclicOrder(userID);
+        else
+            return MakeNormalOrder(userID);
+
+    }
+
+    public String MakeCyclicOrder(Long userId){
+        Set<PermanetOrderDate> permanetOrderDates = new HashSet<>();
+        for(Date d : cyclicOrderDeliver){
+            permanetOrderDates.add(new PermanetOrderDate(d));
+        }
+
+        permanentOrderIEJBnterface.createOrder(orderDetails,new HashSet<Object>(positionsOrder),userId,new HashSet<Object>(permanetOrderDates));
+        return RedirectToPage("catering_products");
+    }
+
+    public String MakeNormalOrder(Long userId){
+        orderEJBInterface.createOrder(orderDeliver, orderDetails, new HashSet<Object>(selectedPositionsView),userId);
+        return RedirectToPage("catering_products");
     }
 
     ///GETTERS AND SETTERS

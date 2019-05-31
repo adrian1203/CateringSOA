@@ -27,19 +27,28 @@ public class UserPanelBean implements Serializable {
     }
 
 
-    public void ChangePassword(){
-        if(changePassword.length() > 5)
-        userEJBInterface.changePassword(changePassword,changePassword); //TODO method api not work
-    }
-
-    public void ChangePasswordByAdmin(){
-        if(changePasswordUser != null && changePasswordUser != -1L && changePassword.length() > 5){
-            userEJBInterface.changePasswordByAdmin(changePassword,changePasswordUser); //TODO method api not work
+    public String ChangePassword(Long UserId){
+        if(changePassword != null)
+        {
+            userEJBInterface.changePasswordByAdmin(changePassword,UserId);
+            userEJBInterface.logOut();
+            return null;
         }
+        else
+            return null;
+
     }
 
-    public List<CateringUser> GetUsersByAdmin(){
-        return new ArrayList<CateringUser>();
+    public String ChangePasswordByAdmin(){
+        if(changePasswordUser != null && changePasswordUser != -1L){
+            userEJBInterface.changePasswordByAdmin(changeSelectedPassword,changePasswordUser);
+            return null;
+        }
+        return null;
+    }
+
+    public List<Object> GetUsersByAdmin(){
+        return userEJBInterface.findAllUser();
     }
 
 

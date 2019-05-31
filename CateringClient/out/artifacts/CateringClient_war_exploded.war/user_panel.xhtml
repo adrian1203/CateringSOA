@@ -28,7 +28,7 @@
 
         </h:panelGrid>
 
-        <h:commandButton value="Zmień" action="#{UserPanelBean.ChangePassword()}"/>
+        <h:commandButton value="Zmień" action="#{UserPanelBean.ChangePassword(LoginBean.loggedUser.id)}"/>
 
     </h:form>
 

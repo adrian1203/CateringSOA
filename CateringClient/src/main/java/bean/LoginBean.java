@@ -168,4 +168,12 @@ public class LoginBean implements Serializable {
     public void setUserRole(String userRole) {
         this.userRole = userRole;
     }
+
+    public CateringUser getLoggedUser() {
+        return loggedUser;
+    }
+
+    public void setLoggedUser(CateringUser loggedUser) {
+        this.loggedUser = loggedUser;
+    }
 }

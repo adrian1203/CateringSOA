@@ -8,6 +8,8 @@ import service.CateringUserService;
 import javax.ejb.EJB;
 import javax.ejb.Remote;
 import javax.ejb.Stateful;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Stateful
@@ -63,7 +65,15 @@ public class UserEJB implements UserEJBInterface {
         return logedUser;
     }
 
+    @Override
+    public List<Object> findAllUser() {
+        return new ArrayList<Object>(Arrays.asList(cateringUserService.getAllCateringUsers().toArray()));
+
+    }
+
     public UserEJB() {
         this.cateringUserService = new CateringUserService();
     }
+
+
 }

@@ -35,7 +35,7 @@ public class CateringUserRepository {
 
     public void updateUser(CateringUser cateringUser) {
         em.getTransaction().begin();
-        em.merge(cateringUser);
+        em.persist(cateringUser);
         em.getTransaction().commit();
     }
 
