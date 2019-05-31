@@ -1,6 +1,8 @@
 package bean;
 
 import domain.CateringUser;
+import ejb.OrderEJBInterface;
+import ejb.PermanentOrderIEJBnterface;
 import ejb.UserEJBInterface;
 
 import javax.ejb.EJB;
@@ -16,6 +18,12 @@ public class UserPanelBean implements Serializable {
 
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/UserEJB")
     private UserEJBInterface userEJBInterface;
+
+    @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/OrderEJB")
+    private OrderEJBInterface orderEJBInterface;
+
+    @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/PermanentOrderIEJB")
+    private PermanentOrderIEJBnterface permanentOrderIEJBnterface;
 
 
     private String changePassword;
@@ -84,5 +92,21 @@ public class UserPanelBean implements Serializable {
 
     public void setChangeSelectedPassword(String changeSelectedPassword) {
         this.changeSelectedPassword = changeSelectedPassword;
+    }
+
+    public OrderEJBInterface getOrderEJBInterface() {
+        return orderEJBInterface;
+    }
+
+    public void setOrderEJBInterface(OrderEJBInterface orderEJBInterface) {
+        this.orderEJBInterface = orderEJBInterface;
+    }
+
+    public PermanentOrderIEJBnterface getPermanentOrderIEJBnterface() {
+        return permanentOrderIEJBnterface;
+    }
+
+    public void setPermanentOrderIEJBnterface(PermanentOrderIEJBnterface permanentOrderIEJBnterface) {
+        this.permanentOrderIEJBnterface = permanentOrderIEJBnterface;
     }
 }

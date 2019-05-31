@@ -67,7 +67,7 @@
             <h:outputText value="Dodaj datę dostarczenia" rendered="#{ProductsBean.cyclicOrder eq true}"/>
             <p:calendar id="dateCyclicDeliver" value="#{ProductsBean.orderDeliver}" mode="popup" rendered="#{ProductsBean.cyclicOrder eq true}"/>
 
-            <h:commandButton value="Dodaj datę" action="#{ProductsBean.AddCyclicDates()}"/>
+            <h:commandButton value="Dodaj datę" action="#{ProductsBean.AddCyclicDates()}" rendered="#{ProductsBean.cyclicOrder eq true}"/>
             <h:outputText value=""/>
 
             <h:outputLabel rendered="#{ProductsBean.cyclicOrder eq true}">Daty zamówień</h:outputLabel>

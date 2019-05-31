@@ -134,6 +134,10 @@ public class ProductsBean implements Serializable {
         return RedirectToPage("catering_products");
     }
 
+    public void ApprovedPosition(Long posId){
+        productEJBInterface.approvePossition(posId);
+    }
+
     ///GETTERS AND SETTERS
 
 

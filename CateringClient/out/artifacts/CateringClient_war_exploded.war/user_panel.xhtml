@@ -54,6 +54,73 @@
 
     </h:form>
 
+
+    <br/>
+    <h3>Zamówienia</h3>
+
+    <h4>Jednorazowe</h4>
+
+    <h:dataTable id="normalOrder" value="#{UserPanelBean.orderEJBInterface.getOrdereForUser(LoginBean.loggedUser.id)}" var="var" border="1" cellpadding="6px">
+        <h:column>
+            <f:facet name="header">Data zamówienia</f:facet>
+            #{var.orderDate}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Data realizacji</f:facet>
+            #{var.deliverDate}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Cena</f:facet>
+            #{var.price}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Dodatkowe informacje</f:facet>
+            #{var.additionalInformation}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Wybrane pozycje</f:facet>
+            <c:forEach items="#{var.positionSet}" var="ob">
+                <h:outputLabel value="JEDNo"/><br/>
+            </c:forEach>
+        </h:column>
+
+    </h:dataTable>
+
+    <h4>Cykliczne</h4>
+
+
+    <h:form rendered="#{LoginBean.CheckRoleAuthority('ADMIN')}">
+
+        <h4>Pozycje do zaakceptowania</h4>
+
+        <h:dataTable id="poisitonToApproved" value="#{ProductsBean.productEJBInterface.possitionToApproved}" var="var" border="1" cellpadding="6px">
+            <h:column>
+                <f:facet name="header">Nazwa pozycji</f:facet>
+                #{var.name}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">Opis pozycji</f:facet>
+                #{var.description}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">Zatwierdź</f:facet>
+                <h:commandButton value="Zaakceptuj" action="#{ProductsBean.ApprovedPosition(var.id)}">
+                    <f:ajax event="click" execute="@this" render="@form"/>
+                </h:commandButton>
+            </h:column>
+
+        </h:dataTable>
+
+    </h:form>
+
+
+
     <br/>
     <h:form>
         <h:commandButton value="Wróć" action="#{ProductsBean.RedirectToPage('catering_products')}"/>

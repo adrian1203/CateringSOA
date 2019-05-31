@@ -20,7 +20,7 @@ public class Order implements Serializable {
     private Date deliverDate;
     private Float price;
     private String additionalInformation;
-    private String orderStatus;
+    private OrderStatus orderStatus;
     private Set<Position> positionSet = new HashSet<Position>();
     private CateringUser cateringUser;
 }
