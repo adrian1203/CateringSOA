@@ -36,11 +36,11 @@ public class Order implements Serializable {
     private OrderStatus orderStatus=OrderStatus.ORDERED;
 
     @JsonIgnoreProperties({"orderSet", "permamentOrderSet"})
-    @ManyToMany(cascade = {CascadeType.ALL})
+    @ManyToMany(cascade = {CascadeType.ALL},  fetch= FetchType.EAGER)
     @JoinTable(
             name = "positionOrder",
-            joinColumns = { @JoinColumn(name = "position_id") },
-            inverseJoinColumns = { @JoinColumn(name = "order_id")}
+            joinColumns = { @JoinColumn(name = "order_id") },
+            inverseJoinColumns = { @JoinColumn(name = "position_id")}
     )
     private Set<Position> positionSet = new HashSet<Position>();
 

@@ -15,10 +15,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.logging.Logger;
 
 @Path("categories")
@@ -56,18 +53,18 @@ public class ProductController {
 //        order.setAdditionalInformation("Testujemmmyyyyy");
 //        order.setOrderDate(new Date());
 //        order.setCateringUser(cateringUserService.findUserById(303L));
-//        Set<Position> positionSet = new HashSet<>();
-//        positionSet.add( positionService.getPositionById(402L));
+        Set<Position> positionSet = new HashSet<>();
+        positionSet.add( positionService.getPositionById(1L));
 //        order.setPositionSet(positionSet);
-        Category category = new Category();
-        category.setDescription("hfghgfhgfh");
-        category.setName("yyyyyyy");
-        categoryService.createCategory("hgjgjhj","ytrytytryrt");
+//        Category category = new Category();
+//        category.setDescription("hfghgfhgfh");
+//        category.setName("yyyyyyy");
+         //categoryService.createCategory("hgjgjhj","ytrytytryrt");
 
-       // orderService.createOrder(new Date(),"ghghg",positionSet, 303L);
-        Set<PermanetOrderDate> permanetOrderDates = new HashSet<>();
-        //permanetOrderDates.add(new PermanetOrderDate());
-        //permanentOrderService.createOrder("tttt", positionSet,303L,permanetOrderDates);
+         orderService.createOrder(new Date(),"ghghg",positionSet, 303L);
+         Set<PermanetOrderDate> permanetOrderDates = new HashSet<>();
+         permanetOrderDates.add(new PermanetOrderDate());
+         permanentOrderService.createOrder("tttt", positionSet,303L,permanetOrderDates);
 //        Date date = new Date();
 //        date.setYear(2000);
 //        orderService.getFilteredOrderForUser(303L,date, new Date());

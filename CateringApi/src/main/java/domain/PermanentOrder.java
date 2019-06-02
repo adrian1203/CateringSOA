@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Fetch;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -32,11 +33,12 @@ public class PermanentOrder implements Serializable {
     private Set<PermanetOrderDate> deliverDateSet = new HashSet<PermanetOrderDate>();
 
     @JsonIgnoreProperties({"orderSet", "permamentOrderSet"})
-    @ManyToMany(cascade = {CascadeType.ALL})
+    @ManyToMany(cascade = {CascadeType.ALL},  fetch= FetchType.EAGER)
     @JoinTable(
+
             name = "pasitionOrderPermament",
-            joinColumns = { @JoinColumn(name = "position_id") },
-            inverseJoinColumns = { @JoinColumn(name = "permanent_order_id")}
+            joinColumns = { @JoinColumn(name = "permanent_order_id") },
+            inverseJoinColumns = { @JoinColumn(name = "position_id")}
     )
     private Set<Position> permamentPositionSet = new HashSet<Position>();
 
