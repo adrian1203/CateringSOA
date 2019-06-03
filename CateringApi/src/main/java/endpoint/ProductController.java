@@ -1,10 +1,8 @@
 package endpoint;
 
 
-import domain.Category;
-import domain.Order;
-import domain.PermanetOrderDate;
-import domain.Position;
+import com.sun.org.apache.xpath.internal.operations.Or;
+import domain.*;
 import service.*;
 
 import javax.ejb.EJB;
@@ -84,6 +82,22 @@ public class ProductController {
 
         //positionService.getTopPosition();
         return null;
+    }
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("order")
+    public List<Order> getOrdee() {
+//        re
+        return orderService.getAllOrders();
+    }
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("per")
+    public List<PermanentOrder> getper() {
+//        re
+        return permanentOrderService.getAllOrders();
     }
 
     @EJB

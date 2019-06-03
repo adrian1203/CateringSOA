@@ -34,9 +34,9 @@ public class CateringUserRepository {
     }
 
     public void updateUser(CateringUser cateringUser) {
-        em.getTransaction().begin();
-        em.persist(cateringUser);
-        em.getTransaction().commit();
+       // em.getTransaction().begin();
+        em.merge(cateringUser);
+        //em.getTransaction().commit();
     }
 
     public void deleteUser(Long id) {

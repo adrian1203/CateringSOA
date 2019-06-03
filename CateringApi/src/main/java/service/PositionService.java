@@ -74,6 +74,13 @@ public class PositionService {
     }
 
     public void setDayPosition(Long id){
+        List<Position> positionList = positionRepository.findAllPosition();
+        positionList.forEach(elem->{
+            if(elem.getDayPosition()){
+                elem.setDayPosition(false);
+                positionRepository.updatePosition(elem);
+            }
+        });
         Position position = positionRepository.findPositionById(id);
         position.setDayPosition(true);
         positionRepository.updatePosition(position);
@@ -100,6 +107,11 @@ public class PositionService {
         }
 
         return null;
+    }
+
+    public Position getDayPosition(){
+        List<Position> positionList= positionRepository.findAllPosition().stream().filter(e->e.getDayPosition()).collect(Collectors.toList());
+        return (positionList!=null) ? positionList.get(0) : null;
     }
 
 

@@ -59,7 +59,7 @@ public class ProductEJB implements ProductEJBInterface {
     }
 
     public Object getDayPosition() {
-        return null;
+       return positionService.getDayPosition();
     }
 
     public void createCategory(String name, String description) {
