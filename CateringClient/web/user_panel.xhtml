@@ -83,14 +83,43 @@
 
         <h:column>
             <f:facet name="header">Wybrane pozycje</f:facet>
-            <c:forEach items="#{var.positionSet}" var="ob">
-                <h:outputLabel value="JEDNo"/><br/>
-            </c:forEach>
+            #{ProductsBean.GetPositionFromSet(var.positionSet)}
         </h:column>
 
     </h:dataTable>
 
     <h4>Cykliczne</h4>
+
+    <h:dataTable id="pernamentOrder" value="#{UserPanelBean.permanentOrderIEJBnterface.getOrderForUser(LoginBean.loggedUser.id)}" var="var" border="1" cellpadding="6px">
+
+        <h:column>
+            <f:facet name="header">Zamawiąjący</f:facet>
+            #{var.cateringUser.firstName} #{var.cateringUser.lastName}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Data złożenia</f:facet>
+            #{var.orderDate}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Dodatkowe informacje</f:facet>
+            #{var.additionalInformation}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Daty dostarczenia</f:facet>
+            <c:forEach items="#{var.deliverDateSet}" var="ob">
+                <h:outputLabel value="#{ob.orderDate}"/><br/>
+            </c:forEach>
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Wybrane pozycje</f:facet>
+            #{ProductsBean.GetPositionFromSet(var.permamentPositionSet)}
+        </h:column>
+
+    </h:dataTable>
 
 
     <h:form rendered="#{LoginBean.CheckRoleAuthority('ADMIN')}">
@@ -120,6 +149,25 @@
     </h:form>
 
 
+    <br/>
+    <h:form rendered="#{LoginBean.CheckRoleAuthority('MANAGER')}">
+
+        <h4>Pozycje dnia</h4>
+
+        <h:dataTable id="dayPosition" value="#{ProductsBean.productEJBInterface.allPosition}" var="var" border="1" cellpadding="6px">
+            <h:column>
+                <f:facet name="header">Nazwa pozycji</f:facet>
+                #{var.name}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">Ustaw pozycję </f:facet>
+                <h:commandButton value="Ustaw" action="#{ProductsBean.SetDayPosition(var.id)}"/>
+            </h:column>
+
+        </h:dataTable>
+
+    </h:form>
 
     <br/>
     <h:form>

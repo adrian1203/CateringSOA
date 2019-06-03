@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
 
 <h:head>
     <title>Katering - Rejestracja</title>
@@ -14,47 +15,58 @@
 <h:body>
     <h2>Rejestracja</h2>
 
-    <h:form>
+    <h:form id="form">
 
-        <h:panelGrid columns="2">
+        <h:panelGrid columns="3">
 
             <h:outputText value="Nazwa użytkownika "/>
-            <h:inputText value="#{LoginBean.login}"/>
+            <h:inputText id="login" value="#{LoginBean.login}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:message for="login" style="color:red" />
 
             <h:outputText value="Hasło "/>
-            <h:inputText value="#{LoginBean.password}"/>
+            <h:inputSecret id="pass" value="#{LoginBean.password}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:message for="pass" style="color:red" />
 
             <h:outputText value="Imię "/>
-            <h:inputText value="#{LoginBean.firstName}"/>
+            <h:inputText id="firstName" value="#{LoginBean.firstName}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:message for="firstName" style="color:red" />
 
             <h:outputText value="Nazwisko "/>
-            <h:inputText value="#{LoginBean.lastName}"/>
+            <h:inputText id="lastName" value="#{LoginBean.lastName}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:message for="lastName" style="color:red" />
 
             <h:outputText value="Email "/>
-            <h:inputText value="#{LoginBean.email}"/>
+            <h:inputText id="mail" value="#{LoginBean.email}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:message for="mail" style="color:red" />
 
             <h:outputText value="City "/>
-            <h:inputText value="#{LoginBean.city}"/>
+            <h:inputText id="city" value="#{LoginBean.city}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:message for="city" style="color:red" />
 
             <h:outputText value="Street"/>
-            <h:inputText value="#{LoginBean.street}"/>
+            <h:inputText id="street" value="#{LoginBean.street}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:message for="street" style="color:red" />
 
             <h:outputText value="Flat number "/>
-            <h:inputText value="#{LoginBean.flatNumber}"/>
+            <h:inputText id="flat" value="#{LoginBean.flatNumber}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:message for="flat" style="color:red" />
 
             <h:outputText value="Typ użytkownika"/>
-            <h:selectOneRadio value="#{LoginBean.userRole}">
+            <h:selectOneRadio id="typ" value="#{LoginBean.userRole}" required="true" requiredMessage="To pole jest wymagane!">
                 <f:selectItem itemLabel="Customer" itemValue="CUSTOMER"/>
                 <f:selectItem itemLabel="Admin" itemValue="ADMIN"/>
                 <f:selectItem itemLabel="Manager" itemValue="MANAGER"/>
                 <f:selectItem itemLabel="Worker" itemValue="WORKER"/>
                 <f:selectItem itemLabel="Supplier" itemValue="SUPPLIER"/>
             </h:selectOneRadio>
+            <h:message for="typ" style="color:red" />
 
         </h:panelGrid>
 
-        <h:commandButton value="Zarejestruj" action="#{LoginBean.ProcessRegistration()}"/>
-        <h:commandButton value="Logowanie" action="/login?faces-redirect=true"/>
+        <h:commandButton id="buttonRegister" value="Zarejestruj" action="#{LoginBean.ProcessRegistration()}"/>
+        <h:commandButton value="Logowanie" action="/login?faces-redirect=true" immediate="true"/>
+
+        <p:messages id="msgs2" for="buttonRegister"/>
 
     </h:form>
 </h:body>

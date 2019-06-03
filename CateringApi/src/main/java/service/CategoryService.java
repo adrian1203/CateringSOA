@@ -1,11 +1,14 @@
 package service;
 
 import domain.Category;
+import domain.Position;
 import repository.CategoryRepository;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Stateless
 public class CategoryService {
@@ -37,7 +40,10 @@ public class CategoryService {
     }
 
     public Category getCategoryById(Long id){
-        return categoryRepository.findCategoryById(id);
+        Category category = categoryRepository.findCategoryById(id);
+        Set<Position> positions = category.getPositionSet().stream().filter(e->e.getToApproved() != true).collect(Collectors.toSet());
+        category.setPositionSet(positions);
+        return category;
     }
 
 

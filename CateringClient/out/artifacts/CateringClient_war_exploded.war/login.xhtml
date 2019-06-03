@@ -15,20 +15,24 @@
 <h:body>
     <h2>Logowanie</h2>
 
-    <h:form>
+    <h:form id="form">
 
-        <h:panelGrid columns="2">
+        <h:panelGrid columns="3">
 
             <h:outputText value="Nazwa użytkownika "/>
-            <h:inputText value="#{LoginBean.login}"/>
+            <h:inputText id="login" value="#{LoginBean.login}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:message for="login" style="color:red" />
 
             <h:outputText value="Hasło "/>
-            <h:inputText value="#{LoginBean.password}"/>
+            <h:inputSecret id="pass" value="#{LoginBean.password}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:message for="pass" style="color:red" />
 
         </h:panelGrid>
 
-        <h:commandButton value="Zaloguj się" action="#{LoginBean.ProcessLogin()}"/>
-        <h:commandButton value="Rejestracja" action="/registration.xhtml?faces-redirect=true"/>
+        <h:commandButton id="buttonLogin" value="Zaloguj się" action="#{LoginBean.ProcessLogin()}"/>
+        <h:commandButton value="Rejestracja" action="/registration.xhtml?faces-redirect=true" immediate="true"/>
+
+        <p:messages id="msgs" for="buttonLogin"/>
 
     </h:form>
 

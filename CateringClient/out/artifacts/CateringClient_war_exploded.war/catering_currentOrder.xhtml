@@ -55,12 +55,12 @@
             <h:outputText value="Godzina dostarczenia" rendered="#{ProductsBean.cyclicOrder eq true}"/>
             <h:outputText value="Minuta dostarczenia" rendered="#{ProductsBean.cyclicOrder eq true}"/>
 
-            <h:panelGrid columns="1" style="margin-bottom: 5px" rendered="#{ProductsBean.cyclicOrder eq true}">
-                <p:inputText id="deliverHour" value="#{ProductsBean.deliverHour}" rendered="#{ProductsBean.cyclicOrder eq true}" />
+            <h:panelGrid columns="1" style="margin-bottom: 5px">
+                <p:inputText id="deliverHour" value="#{ProductsBean.deliverHour}"/>
                 <p:slider for="deliverHour" minValue="0" maxValue="24" step="1" />
             </h:panelGrid>
-            <h:panelGrid columns="1" style="margin-bottom: 5px" rendered="#{ProductsBean.cyclicOrder eq true}">
-                <p:inputText id="deliverMinute" value="#{ProductsBean.deliverMinute}" rendered="#{ProductsBean.cyclicOrder eq true}" />
+            <h:panelGrid columns="1" style="margin-bottom: 5px">
+                <p:inputText id="deliverMinute" value="#{ProductsBean.deliverMinute}"/>
                 <p:slider for="deliverMinute" minValue="0" maxValue="60" step="1" />
             </h:panelGrid>
 

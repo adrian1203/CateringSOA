@@ -1,8 +1,10 @@
 package bean;
 
 import javax.ejb.EJB;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
 import java.io.Serializable;
 
 import domain.CateringUser;
@@ -78,15 +80,31 @@ public class LoginBean implements Serializable {
 
 
     public String ProcessLogin(){
-        userEJBInterface.logIn(login,password);
-        loggedUser = (CateringUser) userEJBInterface.GetLoggedUser();
-        return "/catering_products.xhtml?faces-redirect=true";
+        boolean success = userEJBInterface.logIn(login,password);
+        if(success)
+        {
+            loggedUser = (CateringUser) userEJBInterface.GetLoggedUser();
+            return "/catering_products.xhtml?faces-redirect=true";
+        }
+        else
+        {
+            FacesContext.getCurrentInstance().addMessage("form:buttonLogin", new FacesMessage(FacesMessage.SEVERITY_ERROR, "Dane do logowania nieprawidłowe", "Błąd logowania. Sprawdź dane!"));
+            return null;
+        }
     }
 
 
     public String ProcessRegistration(){
-        userEJBInterface.register(login,password,firstName,lastName,email,city,street,flatNumber,userRole);
-        return "/login.xhtml?faces-redirect=true";
+        boolean success = userEJBInterface.register(login,password,firstName,lastName,email,city,street,flatNumber,userRole);
+        if(success)
+        {
+            return "/login.xhtml?faces-redirect=true";
+        }
+        else
+        {
+            FacesContext.getCurrentInstance().addMessage("form:buttonRegister", new FacesMessage(FacesMessage.SEVERITY_ERROR, "Nieprawidłowe dane przy rejestracji", "Sprawdź dane!"));
+            return null;
+        }
     }
 
     public String Logout(){

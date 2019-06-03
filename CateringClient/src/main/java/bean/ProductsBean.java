@@ -2,6 +2,7 @@ package bean;
 
 
 import domain.Category;
+import domain.Order;
 import domain.PermanetOrderDate;
 import domain.Position;
 import ejb.OrderEJBInterface;
@@ -55,17 +56,12 @@ public class ProductsBean implements Serializable {
     public void FilterPositions(){
         if(selectedCategory != null)
         {
-            System.out.println("Wchodzę t kurwa");
             Category c = (Category)productEJBInterface.getCategoryById(selectedCategory);
             if(c == null)
                 selectedPositionsView.clear();
             else
             {
-                System.out.println("Wchodzę t kurwa do elssaaaaaa");
-                System.out.println(c.getName() +"  kurwa   "+ c.getId());
                 selectedPositionsView = c.getPositionSet();
-                System.out.println(selectedPositionsView.size());
-
             }
         }
         else
@@ -95,7 +91,6 @@ public class ProductsBean implements Serializable {
     public void AddCyclicDates() throws IOException {
         if(orderDeliver!=null)
         {
-            System.out.println("ELO: " + deliverHour + ", " + deliverMinute);
             orderDeliver.setHours(deliverHour);
             orderDeliver.setMinutes(deliverMinute);
             cyclicOrderDeliver.add(orderDeliver);
@@ -130,6 +125,8 @@ public class ProductsBean implements Serializable {
     }
 
     public String MakeNormalOrder(Long userId){
+        orderDeliver.setHours(deliverHour);
+        orderDeliver.setMinutes(deliverMinute);
         orderEJBInterface.createOrder(orderDeliver, orderDetails, new HashSet<Object>(selectedPositionsView),userId);
         return RedirectToPage("catering_products");
     }
@@ -137,6 +134,38 @@ public class ProductsBean implements Serializable {
     public void ApprovedPosition(Long posId){
         productEJBInterface.approvePossition(posId);
     }
+
+
+    public String GetPositionFromSet(Set<Object> objectSet){
+        if(objectSet != null && objectSet.size() > 0)
+        {
+            String positions ="";
+            for(Object o : objectSet){
+                Position p = (Position)o;
+                positions += "* "+p.getName() + "\n";
+            }
+            return positions;
+        }
+        else
+            return " Brak pozycji";
+    }
+
+    public String SetDayPosition(Long posID){
+        productEJBInterface.setDayPossition(posID);
+        return RedirectToPage("catering_products");
+    }
+
+    public String GetDayPosition(){
+        if(productEJBInterface.getDayPosition() == null)
+            return "Pozycja dnia nie została jeszcze wybrana!";
+        else
+        {
+            Position position = (Position)productEJBInterface.getDayPosition();
+            return position.getName() + " za " + position.getPrice() + "zł w kategori " + position.getCategory().getName();
+        }
+    }
+
+
 
     ///GETTERS AND SETTERS
 
