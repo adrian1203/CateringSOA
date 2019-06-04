@@ -161,7 +161,7 @@ public class ProductsBean implements Serializable {
         else
         {
             Position position = (Position)productEJBInterface.getDayPosition();
-            return position.getName() + " za " + position.getPrice() + "zł w kategori " + position.getCategory().getName();
+            return position.getName() + " za " + position.getPrice() + "zł";
         }
     }
 

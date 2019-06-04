@@ -3,6 +3,7 @@ package service;
 import domain.Category;
 import domain.Order;
 import domain.Position;
+import javafx.geometry.Pos;
 import repository.CategoryRepository;
 import repository.OrderRepository;
 import repository.PositionRepository;
@@ -110,7 +111,7 @@ public class PositionService {
     }
 
     public Position getDayPosition(){
-        List<Position> positionList= positionRepository.findAllPosition().stream().filter(e->e.getDayPosition()).collect(Collectors.toList());
+        List<Position> positionList= positionRepository.findAllPosition().stream().filter(e->e.getDayPosition() == true).collect(Collectors.toList());
         return (positionList!=null) ? positionList.get(0) : null;
     }
 
