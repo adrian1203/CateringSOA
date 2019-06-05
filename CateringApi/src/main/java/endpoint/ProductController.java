@@ -51,18 +51,24 @@ public class ProductController {
 //        order.setAdditionalInformation("Testujemmmyyyyy");
 //        order.setOrderDate(new Date());
 //        order.setCateringUser(cateringUserService.findUserById(303L));
-        Set<Position> positionSet = new HashSet<>();
-        positionSet.add( positionService.getPositionById(1L));
-//        order.setPositionSet(positionSet);
-//        Category category = new Category();
-//        category.setDescription("hfghgfhgfh");
-//        category.setName("yyyyyyy");
-         //categoryService.createCategory("hgjgjhj","ytrytytryrt");
+//        Set<Position> positionSet = new HashSet<>();
+//        positionSet.add( positionService.getPositionById(1L));
+////        order.setPositionSet(positionSet);
+////        Category category = new Category();
+////        category.setDescription("hfghgfhgfh");
+////        category.setName("yyyyyyy");
+//         //categoryService.createCategory("hgjgjhj","ytrytytryrt");
+//
+//         orderService.createOrder(new Date(),"ghghg",positionSet, 303L);
+//         Set<PermanetOrderDate> permanetOrderDates = new HashSet<>();
+//         permanetOrderDates.add(new PermanetOrderDate());
+//         permanentOrderService.createOrder("tttt", positionSet,303L,permanetOrderDates);
 
-         orderService.createOrder(new Date(),"ghghg",positionSet, 303L);
-         Set<PermanetOrderDate> permanetOrderDates = new HashSet<>();
-         permanetOrderDates.add(new PermanetOrderDate());
-         permanentOrderService.createOrder("tttt", positionSet,303L,permanetOrderDates);
+        // positionService.setDayPosition(1L);
+
+         //positionService.getDayPosition();
+         getDayPosition();
+         //logger.info(positionService.getDayPosition().getName());
 //        Date date = new Date();
 //        date.setYear(2000);
 //        orderService.getFilteredOrderForUser(303L,date, new Date());
@@ -113,6 +119,11 @@ public class ProductController {
         cateringUserService=new CateringUserService();
         permanentOrderService = new PermanentOrderService();
         orderService = new OrderService();
+    }
+
+
+    public Object getDayPosition() {
+        return positionService.getDayPosition();
     }
 
 

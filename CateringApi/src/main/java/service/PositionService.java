@@ -112,7 +112,7 @@ public class PositionService {
 
     public Position getDayPosition(){
         List<Position> positionList= positionRepository.findAllPosition().stream().filter(e->e.getDayPosition() == true).collect(Collectors.toList());
-        return (positionList!=null) ? positionList.get(0) : null;
+        return (positionList.size()!=0) ? positionList.get(0) : null;
     }
 
 
