@@ -14,6 +14,7 @@ public interface OrderEJBInterface {
     public Object getOrderById(Long id);
     public List<Object> getFilteredOrderForUser(Long userId, Date start, Date end );
     public List<Object> getOrdereForUser(Long userId);
+    public Object generateBill(Long userId, Date start, Date end);
 
 
 }

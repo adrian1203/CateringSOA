@@ -65,4 +65,9 @@ public class OrderEJB implements OrderEJBInterface {
         return new ArrayList<Object>(Arrays.asList(orderService.getAllOrderForUser(userId).toArray()));
 
     }
+
+    @Override
+    public Object generateBill(Long userId, Date start, Date end) {
+        return orderService.generateBill(userId, start, end);
+    }
 }

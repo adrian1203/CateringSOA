@@ -24,6 +24,7 @@ public class LoginBean implements Serializable {
     private String street;
     private String flatNumber;
     private String userRole;
+    FacesContext fc = FacesContext.getCurrentInstance();
 
     private CateringUser loggedUser;
 
