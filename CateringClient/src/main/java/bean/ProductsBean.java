@@ -156,11 +156,12 @@ public class ProductsBean implements Serializable {
     }
 
     public String GetDayPosition(){
-        if(productEJBInterface.getDayPosition() == null)
+        Position position = (Position) productEJBInterface.getDayPosition();
+
+        if(position == null)
             return "Pozycja dnia nie została jeszcze wybrana!";
         else
         {
-            Position position = (Position)productEJBInterface.getDayPosition();
             return position.getName() + " za " + position.getPrice() + "zł";
         }
     }

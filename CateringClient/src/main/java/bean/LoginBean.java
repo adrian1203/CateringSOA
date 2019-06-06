@@ -1,9 +1,11 @@
 package bean;
 
+import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import java.io.Serializable;
 
@@ -29,7 +31,6 @@ public class LoginBean implements Serializable {
 
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/UserEJB")
     private UserEJBInterface userEJBInterface;
-
 
     public LoginBean(){
         userRole="customer";
@@ -80,6 +81,14 @@ public class LoginBean implements Serializable {
 
 
     public String ProcessLogin(){
+        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
+        String userAgent = externalContext.getRequestHeaderMap().get("User-Agent");
+
+        if(!userAgent.contains("Chrome")){
+            FacesContext.getCurrentInstance().addMessage("form:buttonLogin", new FacesMessage(FacesMessage.SEVERITY_ERROR, "Przeglądarka nie obsługiwana!", "Browser mismatched!"));
+            return null;
+        }
+
         boolean success = userEJBInterface.logIn(login,password);
         if(success)
         {
