@@ -1,27 +1,34 @@
 package bean;
 
 
-import lombok.val;
+import JMS.OrderJMS;
+
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
 import javax.jms.*;
 
 @MessageDriven(name = "MyMDB",activationConfig = {
-        @ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/topic/TestTopic"),
+        @ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/topic/OrderTopic"),
         @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Topic"),
         @ActivationConfigProperty(propertyName = "subscriptionDurability", propertyValue = "Durable"),
         @ActivationConfigProperty(propertyName = "subscriptionName", propertyValue = "myTopicSubscription")
 })
 public class CateringMessageBean implements MessageListener {
 
-    public void onMessage(Message message){
+    public void onMessage(Message message) {
         try{
-            if(message instanceof TextMessage){
-                TextMessage textMessage = (TextMessage) message;
-                System.out.println("WIADOMOSC JMS: " + textMessage.getText());
+            if (message instanceof ObjectMessage) {
+
+                ObjectMessage objectMessage = (ObjectMessage) message;
+                OrderJMS orderJMS  = (OrderJMS)objectMessage.getObject();
+                processOrder(orderJMS);
             }
         }catch (JMSException e){
             e.printStackTrace();
         }
+    }
+
+    public void processOrder(OrderJMS order){
+        System.out.println("ORDER: " + order.getId() + ", " + order.getAdidtionalInformation());
     }
 }

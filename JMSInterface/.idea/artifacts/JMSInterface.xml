@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JMSInterface">
+    <output-path>$PROJECT_DIR$/out/artifacts/JMSInterface</output-path>
+    <root id="archive" name="JMSInterface.jar">
+      <element id="module-output" name="JMSInterface" />
+    </root>
+  </artifact>
+</component>

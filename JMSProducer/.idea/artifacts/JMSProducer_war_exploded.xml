@@ -7,6 +7,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="JMSProducer" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="JMSInterface" />
+        </element>
       </element>
     </root>
   </artifact>
