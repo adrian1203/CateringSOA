@@ -43,6 +43,7 @@ public class PositionService {
         logger.info("Wchodzę tu kurwa ");
         Position position = new Position();
         position.setDescription(description);
+        position.setDayPosition(false);
         position.setName(name);
         position.setPrice(price);
         position.setToApproved(toApproved);

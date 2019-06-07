@@ -8,153 +8,33 @@
   <component name="ChangeListManager">
     <list default="true" id="49c89f65-79b6-4374-b809-3fdb24eb224c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringApi_ejb_exploded.rar/ApplicationConfigREST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringApi_ejb_exploded.rar/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CateringApi_ejb_exploded.rar/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/ApplicationConfigREST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/META-INF/CateringApi.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/bean/CateringApplicationManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/bean/ExampleBeen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/bean/OrderEJB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/bean/PermanentOrderIEJB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/bean/ProductEJB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/bean/UserEJB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/CateringUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/OrderStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/PermanentOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/PermanetOrderDate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/UserRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/endpoint/ExampleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/endpoint/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/repository/CategoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/repository/CateringUserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/repository/OrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/repository/PermanentOrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/repository/PositionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/CategoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/CateringUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/PermanentOrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/PositionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/soapService/PositionSOAP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/sopaServiceInterface/PositionSOAPInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/InterfacesApi.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/byte-buddy-1.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/clojure-1.7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/commonj.sdo-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/commonj.sdo-2.1.1.v201112051852.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/eclipselink-2.6.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/gmbal-api-only-3.1.0-b001.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/ha-api-3.1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.4.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/hibernate-entitymanager-5.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/java.jdbc-0.7.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/javax.json-1.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/javax.persistence-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/javax.xml.soap-api-1.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.2.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jaxb-impl-2.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jaxb-jxc-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jaxb-xjc-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jaxws-api-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jaxws-eclipselink-plugin-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jaxws-rt-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jaxws-tools-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/jsr181-api-1.0-MR1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/mail-1.4.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/management-api-3.0.0-b012.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/mimepull-1.9.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/policy-2.7.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/postgresql-42.2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/resolver-20050927.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/saaj-impl-1.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/sdo-eclipselink-plugin-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/stax2-api-3.1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/streambuffer-1.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/woodstox-core-asl-4.4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationConfigREST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CateringApi.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/CateringApplicationManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/ExampleBeen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/OrderEJB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/PermanentOrderIEJB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/ProductEJB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bean/UserEJB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/CateringUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/OrderStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/PermanentOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/PermanetOrderDate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/UserRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/endpoint/ExampleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/endpoint/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/CategoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/CateringUserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/OrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/PermanentOrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/PositionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/CategoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/CateringUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/PermanentOrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/PositionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/soapService/PositionSOAP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sopaServiceInterface/PositionSOAPInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PositionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/bean/OrderEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/bean/OrderEJB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/domain/Bill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/PositionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/classes/service/PositionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/InterfacesApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/CateringApi-1.0-SNAPSHOT/WEB-INF/lib/InterfacesApi.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bean/OrderEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean/OrderEJB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Bill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/PositionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/PositionService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ProductsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/ProductsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/LoginBean$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/LoginBean$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/LoginBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/UserPanelBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/classes/bean/UserPanelBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/lib/InterfacesApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/WEB-INF/lib/InterfacesApi.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringClient/src/main/java/bean/ProductsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/src/main/java/bean/ProductsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CateringClient/target/classes/bean/ProductsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/target/classes/bean/ProductsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/user_panel.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/out/artifacts/CateringClient_war_exploded.war/user_panel.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/src/main/java/bean/UserPanelBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/src/main/java/bean/UserPanelBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/target/classes/bean/LoginBean$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/target/classes/bean/LoginBean$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/target/classes/bean/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/target/classes/bean/LoginBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/target/classes/bean/UserPanelBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/target/classes/bean/UserPanelBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CateringClient/web/user_panel.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../CateringClient/web/user_panel.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterfacesApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfacesApi/out/artifacts/InterfacesApi/InterfacesApi.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/InterfacesApi-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/classes/META-INF/InterfacesApi.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/classes/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/classes/ejb/OrderEJBInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/classes/ejb/PermanentOrderIEJBnterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/classes/ejb/ProductEJBInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/classes/ejb/UserEJBInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/classes/test/ExampleInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterfacesApi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JMSProducer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JMSProducer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JMSProducer/out/artifacts/JMSProducer/JMSProducer.war" beforeDir="false" afterPath="$PROJECT_DIR$/../JMSProducer/out/artifacts/JMSProducer/JMSProducer.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -166,15 +46,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bean/ProductEJB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+            <state relative-caret-position="149">
+              <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
               <folding>
                 <element signature="e#1595#1596#0" expanded="true" />
-                <element signature="e#1649#1650#0" expanded="true" />
+                <element signature="e#1622#1623#0" expanded="true" />
                 <element signature="method#getPossitionToApproved#0;class#ProductEJB#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/domain/Position.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/endpoint/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/soapService/PositionSOAP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,11 +93,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/PositionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1103">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="550">
+              <caret line="45" column="39" lean-forward="true" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/domain/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bean/OrderEJB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="611">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
               <folding>
-                <element signature="method#getTopPosition#0;class#PositionService#0" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/domain/Bill.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -242,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/main/java/service/CateringUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/PermanentOrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bean/OrderEJB.java" />
         <option value="$PROJECT_DIR$/src/main/java/bean/PermanentOrderIEJB.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/CategoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/CateringUserRepository.java" />
@@ -252,6 +188,8 @@
         <option value="$PROJECT_DIR$/src/main/java/bean/ProductEJB.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/PositionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/PositionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bean/OrderEJB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Bill.java" />
       </list>
     </option>
   </component>
@@ -296,8 +234,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,6 +260,38 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CateringApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CateringApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CateringApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CateringApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CateringApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CateringApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CateringApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CateringApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="soapService" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -543,11 +513,12 @@
       <workItem from="1559816253312" duration="231000" />
       <workItem from="1559816649282" duration="25000" />
       <workItem from="1559816856268" duration="18000" />
+      <workItem from="1559889901700" duration="2880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90904000" />
+    <option name="totallyTimeSpent" value="93784000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -562,7 +533,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29424307" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29744136" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -583,8 +554,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tool Output" order="10" weight="0.29469123" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.19068256" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49946696" weight="0.32733223" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.32719395" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4989339" weight="0.32719395" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
@@ -639,16 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/soapService/PositionSOAP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -787,27 +748,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/CateringUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/OrderEJB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -843,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repository/OrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -857,13 +794,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/endpoint/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -891,25 +821,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/PositionService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/ProductEJB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1103">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        <state relative-caret-position="149">
+          <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
           <folding>
-            <element signature="method#getTopPosition#0;class#PositionService#0" />
+            <element signature="e#1595#1596#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+            <element signature="method#getPossitionToApproved#0;class#ProductEJB#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/ProductEJB.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Position.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+        <state relative-caret-position="458">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/endpoint/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/soapService/PositionSOAP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding>
-            <element signature="e#1595#1596#0" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
-            <element signature="method#getPossitionToApproved#0;class#ProductEJB#0" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/PositionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="45" column="39" lean-forward="true" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/OrderEJB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Bill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
         </state>
       </provider>
     </entry>

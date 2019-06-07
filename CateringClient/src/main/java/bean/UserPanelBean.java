@@ -1,15 +1,19 @@
 package bean;
 
+import domain.Bill;
 import domain.CateringUser;
 import ejb.OrderEJBInterface;
 import ejb.PermanentOrderIEJBnterface;
 import ejb.UserEJBInterface;
+import org.omg.CORBA.PUBLIC_MEMBER;
 
 import javax.ejb.EJB;
+import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.bean.ManagedBean;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @SessionScoped
@@ -30,8 +34,11 @@ public class UserPanelBean implements Serializable {
     private Long changePasswordUser;
     private String changeSelectedPassword;
 
-    public UserPanelBean(){
+    private Date billDateFrom;
+    private Date billDateTo;
+    private Bill bill;
 
+    public UserPanelBean(){
     }
 
 
@@ -59,6 +66,26 @@ public class UserPanelBean implements Serializable {
         return userEJBInterface.findAllUser();
     }
 
+
+    public String GenerateBill(Long idUser){
+        bill = (Bill)orderEJBInterface.generateBill(idUser,billDateFrom,billDateTo);
+        if(bill != null)
+            return "/bill.xhtml";
+        else
+            return "";
+    }
+
+    public String PrintBill(){
+        return "";
+    }
+
+    public String GetBillPoisiton(){
+        String positions="";
+        for(String o : bill.getOrderedPosition()){
+            positions += "*"+o+"\n";
+        }
+        return positions;
+    }
 
     ///GET&SET
 
@@ -108,5 +135,29 @@ public class UserPanelBean implements Serializable {
 
     public void setPermanentOrderIEJBnterface(PermanentOrderIEJBnterface permanentOrderIEJBnterface) {
         this.permanentOrderIEJBnterface = permanentOrderIEJBnterface;
+    }
+
+    public Date getBillDateFrom() {
+        return billDateFrom;
+    }
+
+    public void setBillDateFrom(Date billDateFrom) {
+        this.billDateFrom = billDateFrom;
+    }
+
+    public Date getBillDateTo() {
+        return billDateTo;
+    }
+
+    public void setBillDateTo(Date billDateTo) {
+        this.billDateTo = billDateTo;
+    }
+
+    public Bill getBill() {
+        return bill;
+    }
+
+    public void setBill(Bill bill) {
+        this.bill = bill;
     }
 }

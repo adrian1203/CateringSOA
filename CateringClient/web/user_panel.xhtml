@@ -6,7 +6,8 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:c="http://java.sun.com/jsp/jstl/core">
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
 
 <h:head>
     <title>Catering - user panel</title>
@@ -120,6 +121,25 @@
         </h:column>
 
     </h:dataTable>
+
+    <br/>
+    <h:form>
+
+        <h4>Gnerowanie rachunku</h4>
+
+        <h:panelGrid columns="2">
+
+            <h:outputText value="Od"/>
+            <p:calendar id="dateFrom" value="#{UserPanelBean.billDateFrom}" mode="popup" />
+
+            <h:outputText value="Do"/>
+            <p:calendar id="dateTo" value="#{UserPanelBean.billDateTo}" mode="popup" />
+
+            <h:commandButton value="Generuj rachunek" action="#{UserPanelBean.GenerateBill(LoginBean.loggedUser.id)}"/>
+
+        </h:panelGrid>
+
+    </h:form>
 
 
     <h:form rendered="#{LoginBean.CheckRoleAuthority('ADMIN')}">
