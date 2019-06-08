@@ -83,11 +83,6 @@
 
     </h:form>
 
-    <h:form>
-        <h:outputText id="txt_count" value="Zamówienie #{MesBean.GetOrderMessage()}" />
-        <p:poll interval="3" listener="#{MesBean.FilterOrderJMS(LoginBean.loggedUser.id)}" update="txt_count" />
-    </h:form>
-
 
     <h:form rendered="#{LoginBean.CheckRoleAuthority('WORKER')}">
         <h:commandButton value="Modyfikuj kategorię" action="#{ProductsBean.RedirectToPage('add_category')}"/>
