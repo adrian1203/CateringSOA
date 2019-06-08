@@ -14,9 +14,23 @@
 
    <h:form>
 
-      <h2>Test</h2>
+      <h2>Aktualizuj status zamoienia</h2>
+
+      <h:panelGrid columns="2">
+
+         <h:outputLabel value="Id użytkownika "/>
+         <h:inputText value="#{ProducerBean.userID}"/>
+
+         <h:outputLabel value="Id zamówienia"/>
+         <h:inputText value="#{ProducerBean.orderID}"/>
+
+         <h:outputLabel value="Dodatkowe informacje"/>
+         <h:inputText value="#{ProducerBean.additionalInfo}"/>
+
+      </h:panelGrid>
+
       <br/>
-      <h:commandButton value="Send" action="#{ProducerBean.SendMessage()}"/>
+      <h:commandButton value="Wyślij" action="#{ProducerBean.SendMessage()}"/>
 
    </h:form>
 

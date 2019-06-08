@@ -9,6 +9,7 @@ import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import java.io.Serializable;
 
+import JMS.OrderJMS;
 import domain.CateringUser;
 import domain.UserRole;
 import ejb.UserEJBInterface;
@@ -29,6 +30,8 @@ public class LoginBean implements Serializable {
     FacesContext fc = FacesContext.getCurrentInstance();
 
     private CateringUser loggedUser;
+
+    private OrderJMS orderJMS;
 
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/UserEJB")
     private UserEJBInterface userEJBInterface;
@@ -80,7 +83,6 @@ public class LoginBean implements Serializable {
             return false;
     }
 
-
     public String ProcessLogin(){
         ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
         String userAgent = externalContext.getRequestHeaderMap().get("User-Agent");
@@ -103,7 +105,6 @@ public class LoginBean implements Serializable {
         }
     }
 
-
     public String ProcessRegistration(){
         boolean success = userEJBInterface.register(login,password,firstName,lastName,email,city,street,flatNumber,userRole);
         if(success)
@@ -123,7 +124,21 @@ public class LoginBean implements Serializable {
         return "/login.xhtml?faces-redirect=true";
     }
 
+    public void FilterOrderJMS(){
+        if(orderJMS != null){
+            if(orderJMS.getUserId() != loggedUser.getId())
+            {
+                orderJMS = null;
+            }
+        }
+    }
 
+    public void SayHello(){
+        if(loggedUser != null)
+            System.out.println("LOGGGEDD USER");
+        else
+            System.out.println("NOT LOGGED USERR");
+    }
 
     public String getLogin() {
         return login;
@@ -203,5 +218,13 @@ public class LoginBean implements Serializable {
 
     public void setLoggedUser(CateringUser loggedUser) {
         this.loggedUser = loggedUser;
+    }
+
+    public OrderJMS getOrderJMS() {
+        return orderJMS;
+    }
+
+    public void setOrderJMS(OrderJMS orderJMS) {
+        this.orderJMS = orderJMS;
     }
 }

@@ -3,8 +3,13 @@ package bean;
 
 import JMS.OrderJMS;
 
+import javax.annotation.Resource;
 import javax.ejb.ActivationConfigProperty;
+import javax.ejb.EJB;
 import javax.ejb.MessageDriven;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+import javax.inject.Inject;
 import javax.jms.*;
 
 @MessageDriven(name = "MyMDB",activationConfig = {
@@ -14,6 +19,9 @@ import javax.jms.*;
         @ActivationConfigProperty(propertyName = "subscriptionName", propertyValue = "myTopicSubscription")
 })
 public class CateringMessageBean implements MessageListener {
+
+//    @EJB(lookup = "java:global/CateringClient_war_exploded/bean.LoginBean")
+//    LoginBean loginBean;
 
     public void onMessage(Message message) {
         try{
@@ -29,6 +37,6 @@ public class CateringMessageBean implements MessageListener {
     }
 
     public void processOrder(OrderJMS order){
-        System.out.println("ORDER: " + order.getId() + ", " + order.getAdidtionalInformation());
+        //loginBean.SayHello();
     }
 }
