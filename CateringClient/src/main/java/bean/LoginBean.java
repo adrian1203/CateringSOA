@@ -124,21 +124,6 @@ public class LoginBean implements Serializable {
         return "/login.xhtml?faces-redirect=true";
     }
 
-    public void FilterOrderJMS(){
-        if(orderJMS != null){
-            if(orderJMS.getUserId() != loggedUser.getId())
-            {
-                orderJMS = null;
-            }
-        }
-    }
-
-    public void SayHello(){
-        if(loggedUser != null)
-            System.out.println("LOGGGEDD USER");
-        else
-            System.out.println("NOT LOGGED USERR");
-    }
 
     public String getLogin() {
         return login;

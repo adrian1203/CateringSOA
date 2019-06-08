@@ -84,8 +84,8 @@
     </h:form>
 
     <h:form>
-        <h:outputText id="txt_count" value="Zamówienie " />
-        <p:poll interval="3" listener="#{LoginBean.FilterOrderJMS()}" update="txt_count" />
+        <h:outputText id="txt_count" value="Zamówienie #{MesBean.GetOrderMessage()}" />
+        <p:poll interval="3" listener="#{MesBean.FilterOrderJMS(LoginBean.loggedUser.id)}" update="txt_count" />
     </h:form>
 
 
