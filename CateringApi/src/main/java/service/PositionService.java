@@ -61,6 +61,8 @@ public class PositionService {
     }
 
     public void updatePosition(Position position) {
+        position.setDayPosition(false);
+        position.setToApproved(false);
         this.positionRepository.updatePosition(position);
     }
 
@@ -112,7 +114,12 @@ public class PositionService {
     }
 
     public Position getDayPosition(){
-        List<Position> positionList= positionRepository.findAllPosition().stream().filter(e->e.getDayPosition() == true).collect(Collectors.toList());
+
+        List<Position> positionList= positionRepository.findAllPosition();
+        if(positionList!=null){
+            positionList= positionList.stream().filter(e->e.getDayPosition() == true).collect(Collectors.toList());
+
+        }
         return (positionList.size()!=0) ? positionList.get(0) : null;
     }
 
