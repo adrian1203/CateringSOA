@@ -8,7 +8,7 @@
           <element id="module-output" name="JMSProducer" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="JMSInterface" />
+          <element id="library" level="project" name="InterfacesApi" />
         </element>
       </element>
     </root>

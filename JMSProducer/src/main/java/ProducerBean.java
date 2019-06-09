@@ -1,4 +1,5 @@
-import JMS.OrderJMS;
+
+import domain.OrderJMS;
 
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;

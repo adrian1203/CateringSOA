@@ -10,7 +10,6 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="InterfacesApi" />
           <element id="library" level="project" name="Maven: org.primefaces:primefaces:7.0" />
-          <element id="library" level="project" name="JMSInterface" />
         </element>
       </element>
     </root>
