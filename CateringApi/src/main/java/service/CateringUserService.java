@@ -3,16 +3,22 @@ package service;
 import domain.CateringUser;
 import domain.UserRole;
 import repository.CateringUserRepository;
+
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.logging.Logger;
 
+@Stateless
 public class CateringUserService {
 
     Logger logger = Logger.getLogger(CateringUserService.class.getName());
 
 
+
+    @EJB
     private CateringUserRepository cateringUserRepository;
 
     private List<CateringUser> findAllUser() {
@@ -21,7 +27,7 @@ public class CateringUserService {
 
 
     public CateringUserService( ) {
-        this.cateringUserRepository = new CateringUserRepository();
+        //this.cateringUserRepository = new CateringUserRepository();
     }
 
     public CateringUser logIn(String login, String password){

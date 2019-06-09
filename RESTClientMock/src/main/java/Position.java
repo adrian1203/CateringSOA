@@ -23,6 +23,8 @@ public class Position implements Serializable {
     private Float price;
     private Category category;
     private Boolean toApproved;
+    private Boolean dayPosition;
+
 
 
 }

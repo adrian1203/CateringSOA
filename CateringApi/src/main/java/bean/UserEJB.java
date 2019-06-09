@@ -20,6 +20,8 @@ public class UserEJB implements UserEJBInterface {
 
     @EJB
     CateringApplicationManager cateringApplicationManager;
+
+    @EJB
     private CateringUserService cateringUserService;
 
     public Boolean logIn(String login, String haslo) {
@@ -72,7 +74,7 @@ public class UserEJB implements UserEJBInterface {
     }
 
     public UserEJB() {
-        this.cateringUserService = new CateringUserService();
+       // this.cateringUserService = new CateringUserService();
     }
 
 
