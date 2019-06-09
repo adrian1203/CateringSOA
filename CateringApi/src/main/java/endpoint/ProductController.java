@@ -3,6 +3,7 @@ package endpoint;
 
 import com.sun.org.apache.xpath.internal.operations.Or;
 import domain.*;
+import repository.CategoryRepository;
 import service.*;
 
 import javax.ejb.EJB;
@@ -28,20 +29,26 @@ public class ProductController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Category> getAllCategory(@Context HttpHeaders httpHeaders) {
+        List<Category> categories= new LinkedList<>();
         if (httpHeaders.getLanguage() != null) {
-            return categoryService.translateCategory(httpHeaders.getLanguage().toString(), this.categoryService.getAllCategory());
+            categories= categoryService.translateCategory(httpHeaders.getLanguage().toString(), this.categoryService.getAllCategory());
         }
-        return this.categoryService.getAllCategory();
+        categories = this.categoryService.getAllCategory();
+        categoryRepository.ReInitFactory();
+        return categories;
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{id}")
     public Category getCategoryById(@PathParam("id") Long id, @Context HttpHeaders httpHeaders) {
+        Category category;
         if (httpHeaders.getLanguage() != null) {
-            return categoryService.translateCategory(httpHeaders.getLanguage().toString(), categoryService.getCategoryById(id));
+            category =categoryService.translateCategory(httpHeaders.getLanguage().toString(), categoryService.getCategoryById(id));
         }
-        return this.categoryService.getCategoryById(id);
+        categoryRepository.ReInitFactory();
+        category =this.categoryService.getCategoryById(id);
+        return category;
     }
 
 
@@ -129,6 +136,10 @@ public class ProductController {
     private CateringUserService cateringUserService;
     private PermanentOrderService permanentOrderService;
     private OrderService orderService;
+
+
+    @EJB
+    private CategoryRepository categoryRepository;
 
     public ProductController() {
 

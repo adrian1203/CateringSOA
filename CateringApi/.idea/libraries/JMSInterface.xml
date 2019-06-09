@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JMSInterface">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JMSInterface/out/artifacts/JMSInterface/JMSInterface.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
