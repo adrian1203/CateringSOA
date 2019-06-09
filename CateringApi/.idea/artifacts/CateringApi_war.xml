@@ -9,6 +9,11 @@
     </properties>
     <root id="archive" name="CateringApi-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="CateringApi:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="InterfacesApi" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

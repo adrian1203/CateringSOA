@@ -1,6 +1,5 @@
 package bean;
 
-import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -9,7 +8,6 @@ import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import java.io.Serializable;
 
-import JMS.OrderJMS;
 import domain.CateringUser;
 import domain.UserRole;
 import ejb.UserEJBInterface;
@@ -30,8 +28,6 @@ public class LoginBean implements Serializable {
     FacesContext fc = FacesContext.getCurrentInstance();
 
     private CateringUser loggedUser;
-
-    private OrderJMS orderJMS;
 
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/UserEJB")
     private UserEJBInterface userEJBInterface;
@@ -205,11 +201,4 @@ public class LoginBean implements Serializable {
         this.loggedUser = loggedUser;
     }
 
-    public OrderJMS getOrderJMS() {
-        return orderJMS;
-    }
-
-    public void setOrderJMS(OrderJMS orderJMS) {
-        this.orderJMS = orderJMS;
-    }
 }

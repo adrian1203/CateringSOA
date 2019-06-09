@@ -1,4 +1,4 @@
-import JMS.OrderJMS;
+import domain.OrderJMS;
 
 import javax.annotation.Resource;
 import javax.ejb.LocalBean;

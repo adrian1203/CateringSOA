@@ -20,6 +20,12 @@
 
 <h:body>
 
+
+    <h:form>
+        <h:outputText id="txt_count" value="Powiadomienia: #{MessageJMSBean.GetJMSMessage()}" />
+        <p:poll interval="3" listener="#{MessageJMSBean.FilterJMS(LoginBean.loggedUser.id)}" update="txt_count" />
+    </h:form>
+
     <h2>Pozycja dnia</h2>
 
     <h:outputLabel value="#{ProductsBean.GetDayPosition()}"/>
@@ -82,6 +88,9 @@
         <br/>
 
     </h:form>
+
+    <br/>
+
 
 
     <h:form rendered="#{LoginBean.CheckRoleAuthority('WORKER')}">

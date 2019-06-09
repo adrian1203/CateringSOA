@@ -1,11 +1,9 @@
 package bean;
 
 
-import domain.Category;
-import domain.Order;
-import domain.PermanetOrderDate;
-import domain.Position;
+import domain.*;
 import ejb.OrderEJBInterface;
+import ejb.OrderMDBInterface;
 import ejb.PermanentOrderIEJBnterface;
 import ejb.ProductEJBInterface;
 import javax.ejb.EJB;
@@ -32,6 +30,7 @@ public class ProductsBean implements Serializable {
     private int deliverHour;
     private int deliverMinute;
 
+
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/ProductEJB")
     private ProductEJBInterface productEJBInterface;
 
@@ -40,6 +39,8 @@ public class ProductsBean implements Serializable {
 
     @EJB(lookup = "java:global/CateringApi-1.0-SNAPSHOT/PermanentOrderIEJB")
     private PermanentOrderIEJBnterface permanentOrderIEJBnterface;
+
+
 
     public ProductsBean(){
         positionsOrder = new ArrayList<Position>();
@@ -165,8 +166,6 @@ public class ProductsBean implements Serializable {
             return position.getName() + " za " + position.getPrice() + "zł";
         }
     }
-
-
 
     ///GETTERS AND SETTERS
 

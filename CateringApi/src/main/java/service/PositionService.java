@@ -61,8 +61,9 @@ public class PositionService {
     }
 
     public void updatePosition(Position position) {
-        position.setDayPosition(false);
+
         position.setToApproved(false);
+        position.setDayPosition(false);
         this.positionRepository.updatePosition(position);
     }
 
