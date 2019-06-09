@@ -29,9 +29,9 @@ public class Position implements Serializable {
     @Column
     private Float price;
     @Column
-    private Boolean toApproved=false;
+    private Boolean toApproved;
     @Column
-    private Boolean dayPosition = false;
+    private Boolean dayPosition;
 
 
     @JsonIgnoreProperties({"positionSet"})
