@@ -1,6 +1,5 @@
 package repository;
 
-import domain.CateringUser;
 import domain.Position;
 
 import javax.persistence.EntityManager;
@@ -18,7 +17,7 @@ public class PositionRepository {
         em = factory.createEntityManager();
     }
 
-    public List<CateringUser> findAllPosition() {
+    public List<Position> findAllPosition() {
         Query query = em.createQuery("FROM Position ", Position.class);
         return query.getResultList();
     }
@@ -40,9 +39,16 @@ public class PositionRepository {
     }
 
     public void deletePosition(Long id) {
-        Position position = findPositionById(id);
         em.getTransaction().begin();
-        em.remove(position);
+        em.remove(findPositionById(id));
         em.getTransaction().commit();
     }
+
+    public void ReInitFactory(){
+        factory = null;
+        em=null;
+        factory = Persistence.createEntityManagerFactory("CateringJPA");
+        em = factory.createEntityManager();
+    }
+
 }

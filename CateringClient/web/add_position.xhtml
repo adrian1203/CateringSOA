@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Katering - Dodanie pozycji</title>
+    <f:metadata>
+        <f:viewAction action="#{LoginBean.CheckAuthorization(true,'WORKER')}" />
+    </f:metadata>
+</h:head>
+
+<h:body>
+
+    <h2>Dodaj lub modyfikuj pozycję</h2>
+
+    <h:form>
+
+        <h:panelGrid columns="2">
+
+            <h:outputText value="Modyfikuj "/>
+            <h:selectBooleanCheckbox value="#{ModifyProductBean.modifyPosition}">
+                <f:ajax event="click" execute="@this" render="@form"/>
+            </h:selectBooleanCheckbox>
+
+            <h:outputText value="Pozycje " rendered="#{ModifyProductBean.modifyPosition}"/>
+            <h:selectOneListbox value="#{ModifyProductBean.selectedPosition}" rendered="#{ModifyProductBean.modifyPosition}">
+                <f:selectItem itemLabel="" itemValue="-1L"/>
+                <c:forEach var="ct" items="#{ModifyProductBean.productEJBInterface.getAllPosition()}" >
+                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.id}"/>
+                </c:forEach>
+                <f:ajax event="change" listener="#{ModifyProductBean.UpdatePositionModifyInput()}" execute="@this" render="@form"/>
+            </h:selectOneListbox>
+
+            <h:outputText value="Nazwa "/>
+            <h:inputText value="#{ModifyProductBean.posName}"/>
+
+            <h:outputText value="Opis "/>
+            <h:inputText value="#{ModifyProductBean.posDesc}"/>
+
+            <h:outputText value="Cena "/>
+            <h:inputText id="price" value="#{ModifyProductBean.posPrice}" validatorMessage="Niepoprawna cena!" >
+                <f:validateRegex pattern="[0-9]+(\.[0-9][0-9]?)?" />
+            </h:inputText>
+
+            <h:outputText value="Kategoria "/>
+            <h:selectOneMenu value="#{ModifyProductBean.posCategory}">
+                <f:selectItem itemLabel="" itemValue=""/>
+                <c:forEach var="ct" items="#{ProductsBean.productEJBInterface.allCategory}" >
+                    <f:selectItem itemLabel="#{ct.name}" itemValue="#{ct.id}"/>
+                </c:forEach>
+            </h:selectOneMenu>
+
+            <h:commandButton value="Zatwierdź" action="#{ModifyProductBean.ProcessPositionApply()}"/>
+            <h:commandButton value="Usuń pozycję" action="#{ModifyProductBean.DeletePosition()}" rendered="#{ModifyProductBean.modifyPosition}"/>
+
+        </h:panelGrid>
+
+        <h:message for="price" style="color:red" />
+
+    </h:form>
+
+    <br/>
+    <h:form>
+        <h:commandButton value="Wróć" action="#{ProductsBean.RedirectToPage('catering_products')}"/>
+        <h:commandButton value="Wyloguj" action="#{LoginBean.Logout()}"/>
+    </h:form>
+
+</h:body>
+
+</html>

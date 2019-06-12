@@ -1,10 +1,13 @@
 package domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Fetch;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -15,7 +18,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Entity
 @Table(name = "permanent_order")
-public class PermanentOrder {
+public class PermanentOrder implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "CUST_GEN")
     @Column(name = "permanent_order_id", nullable = false)
@@ -26,16 +29,18 @@ public class PermanentOrder {
     @Column
     private Date orderDate;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<PermanetOrderDate> deliverDateSet = new HashSet<PermanetOrderDate>();
 
-    @ManyToMany(cascade = {CascadeType.ALL})
+    @JsonIgnoreProperties({"orderSet", "permamentOrderSet"})
+    @ManyToMany(cascade = {CascadeType.ALL},  fetch= FetchType.EAGER)
     @JoinTable(
-            name = "pasitionOrder",
-            joinColumns = { @JoinColumn(name = "position_id") },
-            inverseJoinColumns = { @JoinColumn(name = "permanent_order_id")}
+
+            name = "pasitionOrderPermament",
+            joinColumns = { @JoinColumn(name = "permanent_order_id") },
+            inverseJoinColumns = { @JoinColumn(name = "position_id")}
     )
-    private Set<Position> positionSet = new HashSet<Position>();
+    private Set<Position> permamentPositionSet = new HashSet<Position>();
 
     @ManyToOne
     private CateringUser cateringUser;

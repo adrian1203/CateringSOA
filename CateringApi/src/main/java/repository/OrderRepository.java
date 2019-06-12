@@ -10,7 +10,6 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 import java.util.List;
 
-@RequestScoped
 public class OrderRepository {
 
     private EntityManagerFactory factory;
@@ -21,7 +20,7 @@ public class OrderRepository {
         em = factory.createEntityManager();
     }
 
-    public List<CateringUser> findAllOrder() {
+    public List<Order> findAllOrder() {
         Query query = em.createQuery("FROM Order ", Order.class);
         return query.getResultList();
     }
@@ -32,7 +31,7 @@ public class OrderRepository {
 
     public void createOrder(Order order) {
         em.getTransaction().begin();
-        em.persist(order);
+        em.merge(order);
         em.getTransaction().commit();
     }
 

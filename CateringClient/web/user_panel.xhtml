@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Catering - user panel</title>
+    <f:metadata>
+        <f:viewAction action="#{LoginBean.CheckAuthorization(true,'CUSTOMER')}" />
+    </f:metadata>
+</h:head>
+
+<h:body>
+
+    <h2>Panel użytkownika</h2>
+
+    <h:form>
+
+        <h:panelGrid columns="2">
+
+            <h:outputText value="Zmiana hasła"/>
+            <h:inputSecret value="#{UserPanelBean.changePassword}"/>
+
+        </h:panelGrid>
+
+        <h:commandButton value="Zmień" action="#{UserPanelBean.ChangePassword(LoginBean.loggedUser.id)}"/>
+
+    </h:form>
+
+    <br/>
+    <h:form rendered="#{LoginBean.CheckRoleAuthority('ADMIN')}">
+
+        <h:panelGrid columns="2">
+
+            <h:outputText value="Wybierz użytkownika "/>
+            <h:selectOneListbox value="#{UserPanelBean.changePasswordUser}">
+                <f:selectItem itemLabel="" itemValue="-1L"/>
+                <c:forEach var="us" items="#{UserPanelBean.GetUsersByAdmin()}">
+                    <f:selectItem itemLabel="#{us.login}" itemValue="#{us.id}"/>
+                </c:forEach>
+            </h:selectOneListbox>
+
+            <h:outputText value="Nowe hasło"/>
+            <h:inputSecret value="#{UserPanelBean.changeSelectedPassword}"/>
+
+        </h:panelGrid>
+
+        <h:commandButton value="Zmień" action="#{UserPanelBean.ChangePasswordByAdmin()}"/>
+
+    </h:form>
+
+
+    <br/>
+    <h3>Zamówienia</h3>
+
+    <h4>Jednorazowe</h4>
+
+    <h:dataTable id="normalOrder" value="#{UserPanelBean.orderEJBInterface.getOrdereForUser(LoginBean.loggedUser.id)}" var="var" border="1" cellpadding="6px">
+        <h:column>
+            <f:facet name="header">Data zamówienia</f:facet>
+            #{var.orderDate}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Data realizacji</f:facet>
+            #{var.deliverDate}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Cena</f:facet>
+            #{var.price}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Dodatkowe informacje</f:facet>
+            #{var.additionalInformation}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Wybrane pozycje</f:facet>
+            #{ProductsBean.GetPositionFromSet(var.positionSet)}
+        </h:column>
+
+    </h:dataTable>
+
+    <h4>Cykliczne</h4>
+
+    <h:dataTable id="pernamentOrder" value="#{UserPanelBean.permanentOrderIEJBnterface.getOrderForUser(LoginBean.loggedUser.id)}" var="var" border="1" cellpadding="6px">
+
+        <h:column>
+            <f:facet name="header">Zamawiąjący</f:facet>
+            #{var.cateringUser.firstName} #{var.cateringUser.lastName}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Data złożenia</f:facet>
+            #{var.orderDate}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Dodatkowe informacje</f:facet>
+            #{var.additionalInformation}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Daty dostarczenia</f:facet>
+            #{UserPanelBean.GetDateFromSet(var.deliverDateSet)}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Wybrane pozycje</f:facet>
+            #{ProductsBean.GetPositionFromSet(var.permamentPositionSet)}
+        </h:column>
+
+    </h:dataTable>
+
+    <br/>
+    <h:form>
+
+        <h4>Gnerowanie rachunku</h4>
+
+        <h:panelGrid columns="2">
+
+            <h:outputText value="Od"/>
+            <p:calendar id="dateFrom" value="#{UserPanelBean.billDateFrom}" mode="popup" />
+
+            <h:outputText value="Do"/>
+            <p:calendar id="dateTo" value="#{UserPanelBean.billDateTo}" mode="popup" />
+
+            <h:commandButton value="Generuj rachunek" action="#{UserPanelBean.GenerateBill(LoginBean.loggedUser.id)}"/>
+
+        </h:panelGrid>
+
+    </h:form>
+
+
+    <h:form rendered="#{LoginBean.CheckRoleAuthority('ADMIN')}">
+
+        <h4>Pozycje do zaakceptowania</h4>
+
+        <h:dataTable id="poisitonToApproved" value="#{ProductsBean.productEJBInterface.possitionToApproved}" var="var" border="1" cellpadding="6px">
+            <h:column>
+                <f:facet name="header">Nazwa pozycji</f:facet>
+                #{var.name}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">Opis pozycji</f:facet>
+                #{var.description}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">Zatwierdź</f:facet>
+                <h:commandButton value="Zaakceptuj" action="#{ProductsBean.ApprovedPosition(var.id)}">
+                    <f:ajax event="click" execute="@this" render="@form"/>
+                </h:commandButton>
+            </h:column>
+
+        </h:dataTable>
+
+    </h:form>
+
+
+    <br/>
+    <h:form rendered="#{LoginBean.CheckRoleAuthority('MANAGER')}">
+
+        <h4>Pozycje dnia</h4>
+
+        <h:dataTable id="dayPosition" value="#{ProductsBean.productEJBInterface.allPosition}" var="var" border="1" cellpadding="6px">
+            <h:column>
+                <f:facet name="header">Nazwa pozycji</f:facet>
+                #{var.name}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">Ustaw pozycję </f:facet>
+                <h:commandButton value="Ustaw" action="#{ProductsBean.SetDayPosition(var.id)}"/>
+            </h:column>
+
+        </h:dataTable>
+
+    </h:form>
+
+    <br/>
+    <h:form>
+        <h:commandButton value="Wróć" action="#{ProductsBean.RedirectToPage('catering_products')}"/>
+        <h:commandButton value="Wyloguj" action="#{LoginBean.Logout()}"/>
+    </h:form>
+
+</h:body>
+
+</html>

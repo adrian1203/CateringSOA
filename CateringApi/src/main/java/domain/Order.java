@@ -1,10 +1,12 @@
 package domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -14,8 +16,8 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "order")
-public class Order {
+@Table(name = "catering_order")
+public class Order implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "CUST_GEN")
@@ -31,13 +33,14 @@ public class Order {
     private String additionalInformation;
 
     @Enumerated(EnumType.STRING)
-    private OrderStatus orderStatus;
+    private OrderStatus orderStatus=OrderStatus.ORDERED;
 
-    @ManyToMany(cascade = {CascadeType.ALL})
+    @JsonIgnoreProperties({"orderSet", "permamentOrderSet"})
+    @ManyToMany(cascade = {CascadeType.ALL},  fetch= FetchType.EAGER)
     @JoinTable(
-            name = "pasitionOrder",
-            joinColumns = { @JoinColumn(name = "position_id") },
-            inverseJoinColumns = { @JoinColumn(name = "order_id")}
+            name = "positionOrder",
+            joinColumns = { @JoinColumn(name = "order_id") },
+            inverseJoinColumns = { @JoinColumn(name = "position_id")}
     )
     private Set<Position> positionSet = new HashSet<Position>();
 

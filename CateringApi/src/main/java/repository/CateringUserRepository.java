@@ -2,12 +2,15 @@ package repository;
 
 import domain.CateringUser;
 
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 import java.util.List;
 
+
+@Stateless
 public class CateringUserRepository {
 
     private EntityManagerFactory factory;
@@ -33,10 +36,10 @@ public class CateringUserRepository {
         em.getTransaction().commit();
     }
 
-    public void updateBook(CateringUser cateringUser) {
-        em.getTransaction().begin();
-        em.merge(cateringUser);
-        em.getTransaction().commit();
+    public void updateUser(CateringUser cateringUser) {
+       em.getTransaction().begin();
+       em.persist(cateringUser);
+       em.getTransaction().commit();
     }
 
     public void deleteUser(Long id) {
@@ -44,5 +47,13 @@ public class CateringUserRepository {
         em.getTransaction().begin();
         em.remove(cateringUser);
         em.getTransaction().commit();
+    }
+
+    public CateringUser findUserByLogin(String login){
+        Query query = em.createQuery("SELECT u From CateringUser u where u.login =:login", CateringUser.class).setParameter("login",login);
+        if(query.getResultList().isEmpty())
+            return null;
+        else
+            return (CateringUser)query.getSingleResult();
     }
 }

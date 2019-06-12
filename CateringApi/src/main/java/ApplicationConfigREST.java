@@ -1,4 +1,5 @@
 import endpoint.ExampleController;
+import endpoint.ProductController;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -12,6 +13,7 @@ public class ApplicationConfigREST extends Application {
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
         h.add(ExampleController.class);
+        h.add(ProductController.class);
         return h;
     }
 }
