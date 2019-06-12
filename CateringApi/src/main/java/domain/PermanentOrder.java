@@ -29,7 +29,7 @@ public class PermanentOrder implements Serializable {
     @Column
     private Date orderDate;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<PermanetOrderDate> deliverDateSet = new HashSet<PermanetOrderDate>();
 
     @JsonIgnoreProperties({"orderSet", "permamentOrderSet"})

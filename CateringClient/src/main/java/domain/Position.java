@@ -21,6 +21,7 @@ public class Position implements Serializable {
     private Float price;
     private Set<Order> orderSet = new HashSet<Order>();
     private Boolean toApproved;
+    private Boolean dayPosition;
     private Category category;
 
 }

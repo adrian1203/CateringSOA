@@ -3,6 +3,7 @@ import domain.Category;
 import domain.Position;
 import ejb.ProductEJBInterface;
 import repository.CategoryRepository;
+import repository.PositionRepository;
 import service.CategoryService;
 import service.CateringUserService;
 import service.PositionService;
@@ -27,6 +28,7 @@ public class ProductEJB implements ProductEJBInterface {
     private CategoryRepository categoryRepository;
 
 
+    private PositionRepository positionRepository;
     private PositionService positionService;
     Logger logger = Logger.getLogger(ProductEJB.class.getName());
 
@@ -40,18 +42,22 @@ public class ProductEJB implements ProductEJBInterface {
 
     public void deletePosition(Long id) {
         positionService.deletePosition(id);
+        positionRepository.ReInitFactory();
     }
 
     public void deleteCategory(Long id) {
         categoryService.deleteCategory(id);
+        categoryRepository.ReInitFactory();
     }
 
     public void updateCategory(Object o) {
         categoryService.updateCategory((Category) o);
+        categoryRepository.ReInitFactory();
     }
 
     public void updatePosition(Object o) {
         positionService.updatePosition((Position) o);
+        categoryRepository.ReInitFactory();
     }
 
     public List<Object> getTopPosition() {
@@ -85,6 +91,7 @@ public class ProductEJB implements ProductEJBInterface {
 
     public void approvePossition(Long id){
         positionService.approvePossition(id);
+        categoryRepository.ReInitFactory();
     }
 
 
@@ -94,7 +101,7 @@ public class ProductEJB implements ProductEJBInterface {
 
 
     public ProductEJB() {
-        //this.categoryService = new CategoryService();
         this.positionService = new PositionService();
+        this.positionRepository = new PositionRepository();
     }
 }

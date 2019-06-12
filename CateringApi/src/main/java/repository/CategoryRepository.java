@@ -42,11 +42,13 @@ public class CategoryRepository {
         em.getTransaction().commit();
     }
 
-    public void deleteCategory(Long id) {
+    public void deleteCategory(Long id){
         Category category = findCategoryById(id);
-        em.getTransaction().begin();
-        em.remove(category);
-        em.getTransaction().commit();
+        try{
+            em.getTransaction().begin();
+            em.remove(category);
+            em.getTransaction().commit();
+        }catch (Exception e) {}
     }
 
     public void ReInitFactory(){

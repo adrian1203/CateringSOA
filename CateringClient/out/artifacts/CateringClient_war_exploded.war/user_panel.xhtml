@@ -110,9 +110,7 @@
 
         <h:column>
             <f:facet name="header">Daty dostarczenia</f:facet>
-            <c:forEach items="#{var.deliverDateSet}" var="ob">
-                <h:outputLabel value="#{ob.orderDate}"/><br/>
-            </c:forEach>
+            #{UserPanelBean.GetDateFromSet(var.deliverDateSet)}
         </h:column>
 
         <h:column>

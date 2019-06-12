@@ -36,7 +36,10 @@
             <h:message for="lastName" style="color:red" />
 
             <h:outputText value="Email "/>
-            <h:inputText id="mail" value="#{LoginBean.email}" required="true" requiredMessage="To pole jest wymagane!"/>
+            <h:inputText id="mail" value="#{LoginBean.email}" required="true" requiredMessage="To pole jest wymagane!" validatorMessage="Niepoprawny adres email!">
+                <f:validateRegex
+                        pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$"/>
+            </h:inputText>
             <h:message for="mail" style="color:red" />
 
             <h:outputText value="City "/>

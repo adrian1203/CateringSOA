@@ -122,6 +122,7 @@ public class ProductsBean implements Serializable {
         }
 
         permanentOrderIEJBnterface.createOrder(orderDetails,new HashSet<Object>(positionsOrder),userId,new HashSet<Object>(permanetOrderDates));
+        ClearAll();
         return RedirectToPage("catering_products");
     }
 
@@ -129,6 +130,7 @@ public class ProductsBean implements Serializable {
         orderDeliver.setHours(deliverHour);
         orderDeliver.setMinutes(deliverMinute);
         orderEJBInterface.createOrder(orderDeliver, orderDetails, new HashSet<Object>(selectedPositionsView),userId);
+        ClearAll();
         return RedirectToPage("catering_products");
     }
 
@@ -136,6 +138,16 @@ public class ProductsBean implements Serializable {
         productEJBInterface.approvePossition(posId);
     }
 
+    public void ClearAll(){
+        orderDeliver=null;
+        orderDetails=null;
+        cyclicOrder=false;
+        cyclicOrderDeliver.clear();
+        selectedPositionsView.clear();
+        positionsOrder.clear();
+        deliverHour=0;
+        deliverMinute=0;
+    }
 
     public String GetPositionFromSet(Set<Object> objectSet){
         if(objectSet != null && objectSet.size() > 0)

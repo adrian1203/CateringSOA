@@ -39,10 +39,16 @@ public class PositionRepository {
     }
 
     public void deletePosition(Long id) {
-        Position position = findPositionById(id);
         em.getTransaction().begin();
-        em.remove(position);
+        em.remove(findPositionById(id));
         em.getTransaction().commit();
+    }
+
+    public void ReInitFactory(){
+        factory = null;
+        em=null;
+        factory = Persistence.createEntityManagerFactory("CateringJPA");
+        em = factory.createEntityManager();
     }
 
 }

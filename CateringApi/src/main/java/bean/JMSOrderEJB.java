@@ -22,4 +22,5 @@ public class JMSOrderEJB implements OrderMDBInterface, Serializable {
     public Object GetOrderMessage() {
         return orderJMS;
     }
+
 }

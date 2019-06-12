@@ -2,6 +2,8 @@ package bean;
 
 import domain.Bill;
 import domain.CateringUser;
+import domain.PermanentOrder;
+import domain.PermanetOrderDate;
 import ejb.OrderEJBInterface;
 import ejb.PermanentOrderIEJBnterface;
 import ejb.UserEJBInterface;
@@ -15,6 +17,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 @SessionScoped
 @ManagedBean(name = "UserPanelBean")
@@ -85,6 +88,14 @@ public class UserPanelBean implements Serializable {
             positions += "*"+o+"\n";
         }
         return positions;
+    }
+
+    public String GetDateFromSet(Set<PermanetOrderDate> dates){
+        String out="";
+        for(PermanetOrderDate d : dates){
+            out+= d.getOrderDate().toString() + " * ";
+        }
+        return out;
     }
 
     ///GET&SET

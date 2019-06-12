@@ -85,7 +85,9 @@
 
         </h:panelGrid>
 
-        <h:outputLabel value="Do zapłacenia: #{ProductsBean.SumOrderPrice()}"/>
+        <h:outputLabel value="Do zapłacenia: #{ProductsBean.SumOrderPrice()}">
+            <f:convertNumber minFractionDigits="2" />
+        </h:outputLabel>
         <br/>
 
         <h:commandButton value="Zamów" action="#{ProductsBean.MakeOrder(LoginBean.loggedUser.id)}"/>

@@ -28,9 +28,9 @@ public class Position implements Serializable {
     private String description;
     @Column
     private Float price;
-    @Column
+    @Column(columnDefinition="BOOLEAN DEFAULT false")
     private Boolean toApproved;
-    @Column
+    @Column(columnDefinition="BOOLEAN DEFAULT false")
     private Boolean dayPosition;
 
 

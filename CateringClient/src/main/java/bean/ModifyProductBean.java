@@ -18,7 +18,7 @@ public class ModifyProductBean implements Serializable {
 
     private String posName;
     private String posDesc;
-    private Float posPrice;
+    private String posPrice;
     private Long posCategory;
 
     private String catName;
@@ -42,8 +42,22 @@ public class ModifyProductBean implements Serializable {
         modifyPosition=false;
     }
 
+    public void ClearAll(){
+        modifyCategory=false;
+        selectedCategory=null;
+        modifyPosition=false;
+        selectedPosition=null;
+        catName=null;
+        catDesc=null;
+        posName=null;
+        posDesc=null;
+        posPrice=null;
+        posCategory=null;
+    }
+
     public String AddNewCategory(){
         productEJBInterface.createCategory(catName,catDesc);
+        ClearAll();
         return "/catering_products.xhtml?faces-redirect=true";
     }
 
@@ -53,13 +67,15 @@ public class ModifyProductBean implements Serializable {
         category.setName(catName);
         category.setDescription(catDesc);
         productEJBInterface.updateCategory(category);
+        ClearAll();
         return "/catering_products.xhtml?faces-redirect=true";
     }
 
     public String AddNewPosition(){
         if(posCategory > -1L)
-            productEJBInterface.createPosition(posName,posDesc,posPrice,posCategory);
+            productEJBInterface.createPosition(posName,posDesc,Float.valueOf(posPrice),posCategory);
         posCategory=-1L;
+        ClearAll();
         return "/catering_products.xhtml?faces-redirect=true";
     }
 
@@ -68,10 +84,11 @@ public class ModifyProductBean implements Serializable {
         position.setId(selectedPosition);
         position.setName(posName);
         position.setDescription(posDesc);
-        position.setPrice(posPrice);
+        position.setPrice(Float.valueOf(posPrice));
         Category category = (Category) productEJBInterface.getCategoryById(posCategory);
         position.setCategory(category);
         productEJBInterface.updatePosition(position);
+        ClearAll();
         return "/catering_products.xhtml?faces-redirect=true";
     }
 
@@ -103,7 +120,7 @@ public class ModifyProductBean implements Serializable {
             Position position = (Position)productEJBInterface.getPositionById(selectedPosition);
             posName = position.getName();
             posDesc = position.getDescription();
-            posPrice = position.getPrice();
+            posPrice = String.valueOf(position.getPrice());
             posCategory = position.getCategory().getId();
         }
     }
@@ -116,7 +133,9 @@ public class ModifyProductBean implements Serializable {
 
     public String DeletePosition(){
         if(selectedPosition != null && selectedPosition != -1L)
+        {
             productEJBInterface.deletePosition(selectedPosition);
+        }
         return null;
     }
 
@@ -136,11 +155,11 @@ public class ModifyProductBean implements Serializable {
         this.posDesc = posDesc;
     }
 
-    public Float getPosPrice() {
+    public String getPosPrice() {
         return posPrice;
     }
 
-    public void setPosPrice(Float posPrice) {
+    public void setPosPrice(String posPrice) {
         this.posPrice = posPrice;
     }
 
